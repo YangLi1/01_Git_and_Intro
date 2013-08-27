@@ -63,7 +63,7 @@ No, it is really easy to lose a USB drive, the M Drive is safer because it is ba
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+git pull latest version
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
