@@ -70,7 +70,9 @@ git pull latest version
 1.read the file backward, printing each line
 2.if new lines exist(read lines into array, print them out backward from the last of the array if greater than 50, clear array )
 3. read new lines if line == "" move pointer+100lines print line, move pointer back 100 lines
-4.
+4.read line, if line != arrayOfUniqueLines(all) add to array OfUniqueLines, print unique liens
+5.readline, if line != arrayOfUniqueLines(all) add to array OfUniqueLines, print all other lines
+6.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
