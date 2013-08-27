@@ -81,7 +81,8 @@ git pull latest version
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
+you would from the bottom of the stack add to the top of the queue, and then remove the bottom of the stack, doing this in a loop until the stack was empty
+then you would remove all the items in the queue back into the stack
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
