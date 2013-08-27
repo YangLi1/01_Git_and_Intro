@@ -72,7 +72,10 @@ git pull latest version
 3. read new lines if line == "" move pointer+100lines print line, move pointer back 100 lines
 4.read line, if line != arrayOfUniqueLines(all) add to array OfUniqueLines, print unique liens
 5.readline, if line != arrayOfUniqueLines(all) add to array OfUniqueLines, print all other lines
-6.
+6.copy 4 shell sort by size
+7.read line shell sort by size
+8.read all lines, get count/2 if if count ==0 end, else{ if( line.getCharcterCount/2==0) output line;) else(move line to back)} print remaining lines// the odd numbered ones  
+9.read all lines, get random number; get random line; print random line; remove random number in array;
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
