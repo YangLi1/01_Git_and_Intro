@@ -89,5 +89,5 @@ then you would remove all the items in the queue back into the stack
 1. blob - a binary large object, it contains a  version of the file
 2. tree - a level of directory information with blob identifiers and path names
 3. commit - hold meta data about the changes sumbitted to the repository
-4. repo - 
-5. hash - TODO
+4. repo - short name for a repository, holds the main version of the files which people work off of and submit changes to
+5. hash - a unique identifier for a commit and the files inside
