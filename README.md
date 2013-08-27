@@ -65,9 +65,12 @@ No, it is really easy to lose a USB drive, the M Drive is safer because it is ba
 
 git pull latest version
 
-#### 3. Morin, Exercise 1.1 (p. 23)
+#### 3. Morin, Exercise 1.1 (p. 26)
 
-[Your answer here]
+1.read the file backward, printing each line
+2.if new lines exist(read lines into array, print them out backward from the last of the array if greater than 50, clear array )
+3. read new lines if line == "" move pointer+100lines print line, move pointer back 100 lines
+4.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
