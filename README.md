@@ -86,8 +86,8 @@ then you would remove all the items in the queue back into the stack
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
+1. blob - a binary large object, it contains a  version of the file
+2. tree - a level of directory information with blob identifiers and path names
+3. commit - hold meta data about the changes sumbitted to the repository
+4. repo - 
 5. hash - TODO
