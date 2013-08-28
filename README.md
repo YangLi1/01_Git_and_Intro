@@ -62,7 +62,8 @@ much sense for me to loose M drive.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-For testing only
+My answer: By using git pull or git fetch, personally I would like to use 
+git fetch because I think it is safer.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 For testing only
