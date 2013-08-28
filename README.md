@@ -1,6 +1,6 @@
 Author
 ==========
-Dumb dumb smelly face, brinkmwj
+Dumb dumb smelly face, ugly, silly, brinkmwj
 Am not!
 
 01_Git_and_Intro
