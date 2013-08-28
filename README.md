@@ -1,6 +1,6 @@
 Author
 ==========
-Bo Brinkman, brinkmwj
+Dumb dumb smelly face, brinkmwj
 01_Git_and_Intro
 ================
 
