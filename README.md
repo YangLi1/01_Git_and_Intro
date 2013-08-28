@@ -60,7 +60,7 @@ Accidents may happen when you rely upon a USB drive, you may lose it, it make be
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+The only thing you may have to do is go back and get the USB if you did not use git, nor any type of storage over a server. However using github will solve this problem as you will be able to access it anywhere only with the requirement of internet connection.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
