@@ -60,11 +60,10 @@ For testing only
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+For testing only
 
 #### 3. Morin, Exercise 1.1 (p. 23)
-
-[Your answer here]
+For testing only
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
