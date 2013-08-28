@@ -60,11 +60,11 @@ Yes, but you still need to commit changes to your repo on github incase you forg
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+Clone a copy of your repo to the computer you are using in the lab. 
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+[Your answer here] 
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
@@ -74,8 +74,8 @@ Note: You should not need to write any real computer code for any of these. Inst
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - binary large object that refers to a variable or file containing any data whose internal structure is ignored by the program.
+2. tree - represents one level of directory information, can recursively reference other subtree objects to build complete file hierarchys and subdirectories.
+3. commit - holds metadata for introduced changes to a repo and points to a tree object that captures the repo state at the time it was performed.
+4. repo - a database containing all the information needed to retain and manage the revisions and history of a project.
+5. hash - Computes the object ID value for an object with specified type with the contents of the named file (which can be outside of the work tree), and optionally writes the resulting object into the object database.
