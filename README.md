@@ -58,11 +58,11 @@ Exercises
 
 My answer: I think it is ok to keep it on USB drive
 as long as you don't loose it, M drive is better because it doesn't make too
-much sense for me to loose M drive.
+much sense for me to loose M:drive.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-My answer: By using git pull or git fetch, personally I would like to use 
+My answer: By using git pull or git fetch,but personally I would like to use 
 git fetch because I think it is safer.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
@@ -76,8 +76,29 @@ Note: You should not need to write any real computer code for any of these. Inst
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - Each version of a file is represented as a blob, a contraction of
+"binary large object," is a term that's commonly used in computing to refer
+to some variable or file that can contain any data and whose internal structure
+is ignored by the program. A blob is trated as being opaque. A blob holds a 
+file's data but does not contain any metadata about the file or even its name.
+
+2. tree - A tree object represents one level of directory information. 
+It records blob identifiers, path names, and a bit of metadata for all the filesin one directory. It can also recursively reference other tree objects and thus
+build a complete hierarchy of files and subdirectories.
+
+3. commit - A commit object holds metadata for each change introduced into the 
+repository, including the author, committer, commit date, and log message. Each
+commit points to a tree object that captures, in one complete snapshot, the 
+state of the repository at the time the commit was performed. The initial commit
+, or root commit, has no parent. Most commits have one commit parent.
+
+4. repo - A Git repository is simply a database containing all the information
+needed to retain and manage the revisions and history of a project. In Git, 
+as with most version control systems, a repository retains a complete copy of
+the entire project throughout its lifetime.
+
+5. hash - A hash value is a result of a calculation that can be performed on 
+a string of text, electronic file or entire hard drives contents. Hash values are used to indentify and filter duplicate files. In Git, hash value can be 
+represented the name of a tree, each blob in a tree also has its own hash value,so tree lists files, and points to their blobs according to their hash values.
+
+
