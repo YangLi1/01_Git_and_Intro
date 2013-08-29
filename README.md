@@ -56,13 +56,24 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-My answer: I think it is ok to keep it on USB drive
-as long as you don't loose it or damage it, M drive is better because it doesn' make too much sense for me to loose M:drive.
+My answer: I think it is OK to keep it on USB drive as long as you don't 
+loose it or damaging it. But I still wouldn't suggest to use USB because
+once you loose or damaging it, you might loose some data of your project which 
+you are currently working on. M drive is better because it doesn' make too much sense for me to loose M:drive. HOWEVER, Git will only recognize one computer, 
+which means if you switch to another computer, Git will not recognize it. 
+For instance, you are working on the lab in Miami University, you put your 
+local copy of your repo on M: Drive. You think you finish it and then going 
+back home. Suddenly, you realize that you forget to push your project to Github.
+The only way you can do in this situation is to go back to the lab,find out
+the computer you just using and push it.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-My answer: By using git pull or git fetch,but personally I would like to use 
-git fetch because I think it is safer.
+My answer: First of all, you need to use git clone URL command to clone your
+repo to the computer and then using git pull command or git fetch command to
+get your latest version of work from Github. By the way, I would like to use 
+git fetch command because I think it is safer. It allows you to check the 
+update information before merging.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 For testing only
