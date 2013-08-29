@@ -91,8 +91,8 @@ On the contrary, q is a FIFO Queuing discipline. This means that if I do a add(x
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - Blob contains the contents of a file. A blob holds a file's data but does not contain any meta-data about the file 
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - A blob is one of the four types of objects in Git. Blob contains the contents of a file. A blob holds a file's data but does not contain any meta-data about the file. 
+2. tree - A tree is a type of object in Git. A tree object represents one level of directory information. It records blob identifiers, path names, and a bit of meta-data for all the files in one directory. It can have sub tree objects and thus build a complete hierarchy of files and subdirectories. 
+3. commit - A commit is a type of object in Git. A commit object holds meta-data for each change introduced into the repository, including the author, committer, commit date, and log message. Each commit points to a tree object that captures the state of the repository at the time the commit was performed. A commit can have parent commit, and a commit reference back to parent commit 
+4. repo - In Git, a repo, or a repository, is a database containing all the information needed to retain and manage the revisions and history of a project. The Git repository retains a complete copy of the entire project throughout its lifetime.
+5. hash - In Git, a hash is a 160-bit value that are represented as a 40-digit hexadecimal number. The hash value is used to identify files in Git. The has value is also used to represent the name of each object in Git. Hashes can not be inverted. This means that any tiny change to a file causes the hash to change. Thus, Hashes can be used to check a file's integrity.  
