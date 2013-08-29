@@ -65,7 +65,7 @@ Exercises
 
 [Your answer here]
 
-#### 3. Morin, Exercise 1.1 (p. 23)
+#### 3. Morin, Exercise 1.1 (p. 23). NOTE: You should not actually implement the solution with code. Instead, explain your solution using English. Pay special attention to explaining which data structure you ought to use, and why.
 
 [Your answer here]
 
