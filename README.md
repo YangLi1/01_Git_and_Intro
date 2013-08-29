@@ -93,9 +93,12 @@ while( !s.empty() ) {
   cout << '\n';
   }
   
-
-
-
+2.My answer:
+1.Create a Stack type of string.
+2.Read the txt file each line and push each line's content to the Stack.
+3.Use pop to print out each line reversely.
+4.Check if txt file still has next line, if it doese, keep repeating the same
+way in order to print out each line in the file reversely.
 
 
 
