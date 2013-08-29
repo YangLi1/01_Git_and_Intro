@@ -71,7 +71,8 @@ Exercises
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
 [Exercise 1.4. Suppose you have a Stack, s, that supports only the push(x) and pop() operations. Show how, using only a FIFO Queue, q, you can reverse the order of all elements in s.
-	The Stack, s, is a LIFO Queuing discipline. This means that if I do a pop() operation on s, I will get the last element on the Stack. 
+
+####The Stack, s, is a LIFO Queuing discipline. This means that if I do a pop() operation on s, I will get the last element on the Stack. 
 	On the contrary, q is a FIFO Queuing discipline. This means that if I do a add(x), where x = the element that is removed by s.  
 	
 	void function reverse
