@@ -56,11 +56,11 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+[Yes, it is okay to keep my local copy of my repo on a USB drive and just carry it around.]
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+[I will try to clone a repo from github.com]
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
@@ -74,7 +74,7 @@ Note: You should not need to write any real computer code for any of these. Inst
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
+1. blob - Blob contains the contents of a file. A blob holds a file's data but does not contain any meta-data about the file 
 2. tree - TODO
 3. commit - TODO
 4. repo - TODO
