@@ -65,6 +65,7 @@ Exercises
 #### 3. Morin, Exercise 1.1 (p. 23)
 
 [1. Read the input one line at a time and then write the lines out in reverse order, so that the last input line is printed first, then the second last input line, and so on]
+
 This can be accomplished by implementing Stack. Doing a pop() operation to remove the last line, and then print the last line on the screen. Doing a pop() operation to remove the second last input line, and then print the second last input line, and so on
 
 	
