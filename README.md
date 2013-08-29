@@ -95,11 +95,19 @@ while( !s.empty() ) {
   
 2.My answer:
 1.Create a Stack type of string.
-2.Read the txt file each line and push each line's content to the Stack.
-3.Use pop to print out each line reversely.
+2.Read the txt file each line and push each line's content to the
+Stack 50 times.
+3.Use pop to print out each line reversely .
 4.Check if txt file still has next line, if it doese, keep repeating the same
 way in order to print out each line in the file reversely.
 
+3.My answer:
+1.Create a Queue type of string.
+2.Read the file each line and push each line's content to the Queue 42 times.
+3.Check if 43th line in the file is empty, if it is empty, print out the
+element in the head of the Queue.
+4.Read the next line and by using the same way until no more lines in the
+file to read.
 
 
 
