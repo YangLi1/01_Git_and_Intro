@@ -64,7 +64,12 @@ Exercises
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+[1. Read the input one line at a time and then write the lines out in reverse order, so that the last input line is printed first, then the second last input line, and so on]
+    This can be accomplished by implementing Stack. Doing a pop() operation to remove the last line, and then print the last line on the screen. Doing a pop() operation to remove the second last input line, and then print the second last input line, and so on
+	void function readAndReverse
+		while the file is not empty
+			do a pop() operation
+			print the line that is removed by the pop() operation
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
@@ -76,7 +81,7 @@ The Stack, s, is a LIFO Queuing discipline. This means that if I do a pop() oper
 On the contrary, q is a FIFO Queuing discipline. This means that if I do a add(x), where x = the element that is removed by s.  
 	
 	void function reverse
-	while s still has elements
+	while s is not empty
 		do pop() operation on s
 		do add(x) operation on q, where x = s.pop()
 
