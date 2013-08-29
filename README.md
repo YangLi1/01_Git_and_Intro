@@ -76,8 +76,33 @@ git fetch command because I think it is safer. It allows you to check the
 update information before merging.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
+1.My answer:
+First of all I want to mention that I migh have some C++ codes below to explain
+my strategy, but I use Vim editor so my code might not be compiled. For the
+first question, I will first read the txt file each and use STACK to print 
+out the content reversely, because Stack is FILO style. The key code is basicly
+like:
+stack <char> s;
+char a;
+while(cin.get(a) && a != '\n')
+  s.push(a);   //add the content to the Stack
+while( !s.empty() ) {
+  cout << s.top();   //from the top
+  s.pop();
+  }
+  cout << '\n';
+  }
+  
 
-Start reading Open Data Structures...
+
+
+
+
+
+
+
+
+
 
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
