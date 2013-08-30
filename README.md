@@ -92,7 +92,7 @@ If that isn't the case, then you should go back to your room and get the usb dri
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
+1.4 - To reverse the elements in Stack s with a FIFO Queue q, the following would need to be done. The contents of s would need to be popped to the FIFO Queue q. Due to the LIFO nature of s, its elements would be removed in the reverse order that they were pushed to the stack. Since q is a FIFO q, removing the elements from q and pushing them to s would put the elements in s in the same order as they were in q, thereby reversing the order of the elements as they were originally ordered in s.
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
