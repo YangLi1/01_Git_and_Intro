@@ -76,8 +76,16 @@ If that isn't the case, then you should go back to your room and get the usb dri
 
 4. For a program that would only print a line of text that is not a duplicate, I would recommend using an SSet because it is an ordered set. I would first store each occurrence of a line in the SSet in alphabetical order (since we're using a text file). After reading in a line, I would compare the line to the contents of the SSet. If a match isn't found, I would store the line in the SSet and then output the line. If a match was found, I would not store the line, nor would I output it.
 
-5.For similar reasons to 1.1.4, I would use an SSet again. In this case, the first occurrence of each line is still stored in the ordered set. When a match IS found, I would replace the line in the SSet with the line that was just read in, and I would then print that line.
+5. For similar reasons to 1.1.4, I would use an SSet again. In this case, the first occurrence of each line is still stored in the ordered set. When a match IS found, I would replace the line in the SSet with the line that was just read in, and I would then print that line.
 
+6. To print all of the lines sorted in order by length (shortest to longest), I would use an SSet. I would configure the SSet to store the lines in order of length (shortest to longest), and then have it break ties by sorting the sentence alphabetically. Before storing the line in the set, I would check to see if there was a duplicate line already in the set, in which case I would not store the duplicate line. Once all of the lines have been read in, I would print the lines from the SSet, starting from the first index of the SSet and ending at the last index of the SSet.
+
+
+7. My approach to this question is exactly the same as the approach to my answer to 1.1.6, with the only change being that I would not check for duplicate lines, since all duplicate lines are to be printed.
+
+8. A USet would be the best interface to use in this instance because the lines do not need to be ordered. Once all of the lines were read in to the USet, I would use two loops to print the text. The first loop would start at the very first line (index 0) and print every other line until the end of the USet is reached. Once that loop has completed, a loop that starts at index 1 and prints every other line would be used.
+
+9. Ideally, I would use the List interface to accomplish the task of printing the lines in any order because they are the easiest to shuffle the contents. After the contents have been shuffled, I would then just print the lines starting from the beginning of the list and ending at the end of the list.
 
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
