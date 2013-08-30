@@ -65,20 +65,33 @@ Exercises
 #### 3. Morin, Exercise 1.1 (p. 23)
 
 [1. Read the input one line at a time and then write the lines out in reverse order, so that the last input line is printed first, then the second last input line, and so on]
-Several interfaces could be used for this, but Deque is the better choice. Since we do not know the total number of lines, any List interface wouldn't be a good choice. If there are n lines, and if we use FILO and LIFO, to read and write n lines, we need to do n * n operations. However, if we use Deque, we only need to do n operations.
-
+Implements Deque Interface
 	void function reverse
 		while the file has next line
 			remove last line and add to first line
 [2. Read the first 50 lines of input and then write them out in reverse order. Read the next 50 lines and then write them out in reverse order. Do this until there are no more lines left to read, at which point any remaining lines should be output in reverse order]
-Since we have a size of 50 lines to work with, it's better to use a List interface, and USet is a better choice here. 
-
+Implements Uset Interface
 
 	void function reverse50
-		put x(0) in a temporary variable
-		for(int i = 1; i<50; i++)
-			add x(i) to x(i-1) location
-		put x(0) in x(49) position
+		add all the lines to List s
+		loop through the list s at a increase of every 50 lines
+			in each 50 lines of block, put the first element in a variable temp
+			then loop through each of the 50 position, and swap last element to position 0, second to last element to position 1, and so on
+			finally put the element in variable temp at the last position of the 50-line block
+			
+[3. Read the input one line at the time. At any point after reading the first 42 lines, if some line is blank, then output the line that occured 42 lines prior to that one]
+Implements Uset Interface
+	void function never43
+		add all the lines to List s
+		loop through the List s from 43 to the end at a increase of every single line
+			if s(i) is blank
+				print out s(i-42)
+				
+[4. Read the input one line at a time and write each line to the output if it is not a duplicate of some previous input line.]
+Implements USet Interface. 
+
+	void function delet
+
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
