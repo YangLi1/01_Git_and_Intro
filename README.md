@@ -62,7 +62,9 @@ When it comes to the M: drive here at Miami, it is certainly a better option tha
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+If the repo was also up to date online on github, then I would clone the repo to the computer at the lab. 
+
+If that isn't the case, then you should go back to your room and get the usb drive, and subsequently (or before you return to the lab) push your repo to your online server so the issue doesn't happen again.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
