@@ -68,7 +68,9 @@ If that isn't the case, then you should go back to your room and get the usb dri
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1. A stack would be the best interface to use in this scenario, since that uses the "Last in, First Out" (LIFO) implementation, which is exactly what is asked for in the description.
+
+2. Just as in 1., I would use a Stack to accomplish the task, but to ensure that the whole file is not read in and then out put, I would use a counter to keep track of how many lines have been read in. Once the counter reaches 50, I would stop the program from reading in more lines and instead begin outputting the lines in LIFO order. I would use a while loop that keeps repeating this process until there is nothing left to read in the file.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
