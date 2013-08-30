@@ -109,6 +109,17 @@ element in the head of the Queue.
 4.Read the next line and by using the same way until no more lines in the
 file to read.
 
+4.My answer:
+1.Create a USet type linked list.
+2.Read the txt file each line and use add(x) method to add them in the USet.
+3.Print out the content if add(x) return true.
+4.Keep reading the file until there is no more lines to read.
+
+5.My answer:
+1.Create a USet type linked list.
+2.Read the the txt file each line and use add(x) method to add them in the USet.
+3.Print out the content if add(x) return FALSE.
+4.Keep reading the file until there is no more lines to read.
 
 
 
