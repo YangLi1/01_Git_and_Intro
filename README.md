@@ -64,7 +64,12 @@ Assuming you pushed your repository to github before leaving, you can pull your 
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1. Using the LIFO interface, read the lines in order and then remove in reverse order
+2. Using the List interface, I would read in lines until size() returns 50 or there are no lines. Then I would use get(size()-1) and remove(size()-1) to output and clear the array in reverse order. Once the array is clear again, repeat the process, unless the array never got to size 50.
+3. Using the List interface, I would read lines one by one, and once the size() returns 43 or more, get(size()-1), and if it is blank, get(size()-42) and output it. Either way remove(size(-42) must be called at the end of the loop to make room for the next line.
+4. Using the USet interface, read in every line, duplicates returning false during the add(x) function and not being added to the set. Then print the entire array.
+5. Using the USet interface, read in every line, checking to see if the element is there using find(x). If it exists already, print the line. If not, it is added to the array.
+6.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
