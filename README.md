@@ -60,7 +60,7 @@ No that is not ok. It is not ok because it deprives other people of getting to s
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+You clone the homework offline and start working on it again from scratch. But from then on you don't save things on a USB drive you use git and github to help keep track of all your work over the time you work on it.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
