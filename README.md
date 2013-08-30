@@ -65,15 +65,20 @@ Exercises
 #### 3. Morin, Exercise 1.1 (p. 23)
 
 [1. Read the input one line at a time and then write the lines out in reverse order, so that the last input line is printed first, then the second last input line, and so on]
+Several interfaces could be used for this, but Deque is the better choice. Since we do not know the total number of lines, any List interface wouldn't be a good choice. If there are n lines, and if we use FILO and LIFO, to read and write n lines, we need to do n * n operations. However, if we use Deque, we only need to do n operations.
 
-This can be accomplished by implementing Stack. Doing a pop() operation to remove the last line, and then print the last line on the screen. Doing a pop() operation to remove the second last input line, and then print the second last input line, and so on
+	void function reverse
+		while the file has next line
+			remove last line and add to first line
+[2. Read the first 50 lines of input and then write them out in reverse order. Read the next 50 lines and then write them out in reverse order. Do this until there are no more lines left to read, at which point any remaining lines should be output in reverse order]
+Since we have a size of 50 lines to work with, it's better to use a List interface, and USet is a better choice here. 
 
-	
-	void function readAndReverse
-		while the file is not empty
-			do a pop() operation
-			print the line that is removed by the pop() operation
 
+	void function reverse50
+		put x(0) in a temporary variable
+		for(int i = 1; i<50; i++)
+			add x(i) to x(i-1) location
+		put x(0) in x(49) position
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
