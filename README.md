@@ -75,7 +75,7 @@ Note: You should not need to write any real computer code for any of these. Inst
 #### 5. Define/explain each of the following terms, as they relate to git.
 
 1. blob - In Git each version of a file is represented as a blob. A blob holds a file’s data but does not contain any metadata about the file or even its name.
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+2. tree - A tree object represents one level of directory information. Inside a tree are blobs
+3. commit - A commit object holds data about changes into a repository. A commit points to a tree that captues the state of the repository at the time the commit was performed.
+4. repo - A repository is a database containing all the information needed to retain and manage the revisions and history of a project. In git a repository holds a complete copy of a project through its entire lifetime
+5. hash - Hash in git is like the address or the name git gives to a file to help keep track of it
