@@ -64,7 +64,15 @@ You clone the homework offline and start working on it again from scratch. But f
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1.I would use a LIFO Queue. I feel that this would be the best data structure because it is for last in first out. Which is exactly what the problem is asking for.
+2.I would again use a LIFO Queue. I would use two for loops. the top loop would iterate 50 times and within each iteration it would read one line of text and check to make sure there was a next line of text. once the first loop had gotten to 50 the second loop would print everything back out and then the loops would start back over from a while loop inclosing the two for loops
+3.I would use a LIFO queue. I would use a while loop to read and store lines of code. If there is ever a blank line then it prints all 42 lines of code that are stored. It can never store more than 43 lines so it always throws away the oldest line to store the newest line of code
+4.
+5.
+6.
+7.
+8.
+9.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
