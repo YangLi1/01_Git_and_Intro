@@ -74,7 +74,7 @@ Note: You should not need to write any real computer code for any of these. Inst
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
+1. blob - In Git each version of a file is represented as a blob. A blob holds a file’s data but does not contain any metadata about the file or even its name.
 2. tree - TODO
 3. commit - TODO
 4. repo - TODO
