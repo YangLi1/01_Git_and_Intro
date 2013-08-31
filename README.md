@@ -56,11 +56,11 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[No, it is not okay to keep my local copy of repo on a USB drive and just carry it around. It is also not okay to keep it on the M: drive. The reason is because that data on the repo has a greater chance to get lost if I keep my local copy of repo on a USB or M:drive. For example, I could lose my USB drive, and thus losing my whole repo. Miami University may lose my repo my M: drive. Even if Miami University keeps a back up of my M: Drive, it will take a lot of effort to get my data back.]
+No, it is not okay to keep my local copy of repo on a USB drive and just carry it around. It is also not okay to keep it on the M: drive. The reason is because that data on the repo has a greater chance to get lost if I keep my local copy of repo on a USB or M:drive. For example, I could lose my USB drive, and thus losing my whole repo. Miami University may lose my repo my M: drive. Even if Miami University keeps a back up of my M: Drive, it will take a lot of efforts to get my data back.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Every time I do a commit, I will do a push. This way, my repo will be safe and sound at github.com. So if one day I come into the lab and forget to bring my USB drive with my repo, I will just go to github.com and clone one]
+Every time I do a commit, I will do a push. This way, my repo will be safe and sound on github.com. So if one day I come into the lab and forget to bring my USB drive with my repo, I will just go to github.com and clone one.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
@@ -75,7 +75,8 @@ Here, Stack is a better choice. A Stack process the lines on a last in first out
 
 [2. Read the first 50 lines of input and then write them out in reverse order. Read the next 50 lines and then write them out in reverse order. Do this until there are no more lines left to read, at which point any remaining lines should be output in reverse order]
 
-Similar to problem 1, Stack is a good choice for this problem. Instead of reading one line at a time, we read the first 50 lines one line at a time, and we put the first 50 lines onto the Stack. We then read the next 50 lines (from line 51 to 100) one line at a time, and we put them onto the Stack. This will reverse lines as the question asked us to do, and by doing this, I have have to store more than 50 lines at any give time.
+Similar to problem 1, a Stack is a good choice for this problem. Instead of reading one line at a time, we read the first 50 lines one line at a time, and we put the first 50 lines onto the Stack. We then read the next 50 lines (from line 51 to 100) one line at a time, and we put them onto the Stack. This will reverse lines as the question asked us to do, and by doing this, we never have to store more than 50 lines at any give time.
+
 
 	function void reverse50
 		while there are 50 lines
@@ -83,7 +84,7 @@ Similar to problem 1, Stack is a good choice for this problem. Instead of readin
 				print the Stack
 		read the left lines that are less than 50 lines, and put these lines on the Stack
 			print the Stack
-		
+			
 [3. Read the input one line at the time. At any point after reading the first 42 lines, if some line is blank, then output the line that occurred 42 lines prior to that one]
 
 Here, A Queue is a better choice. A Queue process the lines on a first in first out (FIFO) basis. When we read the first line and put it on the Queue, it will appear on the top of the Queue. When we read the last line and put it on the Queue, it will appear on the bottom of the Queue. So if we read a blank line at Line 43, then the line that occurred 42 lines prior to Line 43 is Line 1, then we could just print the first line on the Queue. Once we print the first line, we remove the first line from the Queue and read the next line. If Line 43 is not a blank line, we simply remove Line 1 and read the next line. By doing this, we never stores more than 43 lines of the input at any given time, thus this should be a fairly fast process.
@@ -100,6 +101,8 @@ Here, A Queue is a better choice. A Queue process the lines on a first in first 
 [4. Read the input one line at a time and write each line to the output if it is not a duplicate of some previous input line.]
 
 In order to find out whether or not a line is unique, both USet and SSet require comparisons. But if we use SSet, we could sort the lines. Once they are in order, we can remove the duplicated lines by comparing neighbouring lines. Since we only need to compare two lines at a time, this should be a faster process than using USet. 
+	
+
 	function void notDuplicatedLines
 		sort all the lines and put into a set s 
 			for(int i =0; i< s.size-2, i++)
@@ -107,8 +110,9 @@ In order to find out whether or not a line is unique, both USet and SSet require
 				if the two lines are duplicated
 					remove one of them
 		print set s
-[5. Read the input one line at a time and write each line to the output only if you have already read this line before]
+		
 
+[5. Read the input one line at a time and write each line to the output only if you have already read this line before]
 
 Here, a USet is a better choice. If we use SSet, after we sort the lines, we have to do at two comparisons to a line (the line before and the line after) to find out whether or not it is a unique line. A USet contains n distinct elements; no element appears more than once. Thus, we could put all the distinct elements in the USet, and in the end remove the entire USet. This will leave duplicate lines in the file, and we just print them out. Using USet, we do not have to store a lot of duplicate lines in the USet. So if a file with a lot of duplicate lines does not use more memory than what is required for the number of unique lines. Thus using USet should be faster than using SSet.
 
