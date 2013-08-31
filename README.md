@@ -114,7 +114,7 @@ In order to find out whether or not a line is unique, both USet and SSet require
 
 [5. Read the input one line at a time and write each line to the output only if you have already read this line before]
 
-Here, a USet is a better choice. If we use SSet, after we sort the lines, we have to do at two comparisons to a line (the line before and the line after) to find out whether or not it is a unique line. A USet contains n distinct elements; no element appears more than once. Thus, we could put all the distinct elements in the USet, and in the end remove the entire USet. This will leave duplicate lines in the file, and we just print them out. Using USet, we do not have to store a lot of duplicate lines in the USet. So if a file with a lot of duplicate lines does not use more memory than what is required for the number of unique lines. Thus using USet should be faster than using SSet.
+Here, a USet is a better choice. If we use SSet, after we sort the lines, we have to do at least two comparisons to a line (comparing a line to the line before and the line after) to find out whether or not it is a unique line. A USet contains n distinct elements; no element appears more than once. Thus, we could put all the distinct elements in the USet, and remove the entire USet in the end. This will leave duplicate lines in the file, and we just print them out. Using USet, we do not have to store a lot of duplicate lines in the USet. So if a file with a lot of duplicate lines does not use more memory than what is required for the number of unique lines. Thus using USet should be faster than using SSet.
 
 	function void duplicatedLines
 		read the lines and put unique lines into USet s
@@ -123,6 +123,7 @@ Here, a USet is a better choice. If we use SSet, after we sort the lines, we hav
 [6. Read the entire input one line at at time. Then output all lines sorted by length, with the shortest lines first. ]
 
 Here, order is important because we want to sort the lines by length. Thus, a SSet is a better choice. 
+
 	function void sortByLength
 		sort all the lines by length and put into a set s
 			while the file still has lines left
@@ -135,7 +136,7 @@ Here, order is important because we want to sort the lines by length. Thus, a SS
 				
 [7. Do the same as the previous question except that duplicate lines should be printed the same number of times that they appear in the input. ]
 
-Same as problem 6, order is important here. Thus, SSet is a better choice than USSet. We read the file and sorted the lines by length. In the end, we print out the whole set as it is. 
+Same as problem 6, order is important here. Thus, SSet is a better choice. We read the file and sorted the lines by length. In the end, we print out the whole set as it is. 
 
 	function void sortByLength2
 		sort all the lines by length and put into a set s
@@ -143,7 +144,7 @@ Same as problem 6, order is important here. Thus, SSet is a better choice than U
 
 [8. Read the entire input one line at a time and then output the even numbered lines followed by the odd-numbered lines]
 
-Implements a DeQue. We read through the lines, if it is odd numbered line, we add it to the end of the Queue. If it is even numbered line, we add it to the beginning of the Queue. Using a DeQue, we only need to read through the lines one time. Thus, it should be faster than using Queue or Stack
+Here, we can implement a DeQue. We read through the lines, if it is odd numbered line, we add it to the end of the Queue. If it is even numbered line, we add it to the beginning of the Queue. Using a DeQue, we only need to read through the lines one time. Thus, it should be faster than using Queue or Stack
 
 	function void evenOdd
 		while there are lines in the file
