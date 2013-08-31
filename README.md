@@ -66,7 +66,7 @@ Exercises
 
 [1. Read the input one line at a time and then write the lines out in reverse order, so that the last input line is printed first, then the second last input line, and so on]
 
-Here, Stack is the better choice. A Stack process the lines on a last in first out (LIFO) basis, so when we read a line, and put it on a Stack, the first line will be on the bottom of the Stack, and the last line will be on the top of the Stack. So the lines will be in reverse order. Since this process only requires one operation, that is, read a line and put onto a stack, it should be fairly fast.
+Here, Stack is a better choice. A Stack process the lines on a last in first out (LIFO) basis, so when we read a line, and put it on a Stack, the first line will be on the bottom of the Stack, and the last line will be on the top of the Stack. So the lines will be in reverse order after we put them on the Stack. Since this process only requires one operation on each line, that is, read one line at a time and put it onto a stack, it should be fairly fast.
 
 	function void reverse
 		while there are more lines
@@ -75,7 +75,7 @@ Here, Stack is the better choice. A Stack process the lines on a last in first o
 
 [2. Read the first 50 lines of input and then write them out in reverse order. Read the next 50 lines and then write them out in reverse order. Do this until there are no more lines left to read, at which point any remaining lines should be output in reverse order]
 
-Similar to problem 1, Stack is a good choice for this problem. Instead of reading one line at a time, we read the first 50 lines one line at a time, and we put the first 50 lines onto the Stack. We then read the next 50 lines (from line 51 to 100) one line at a time, and we put them onto the Stack. This will reverse lines as the question asked us to do.
+Similar to problem 1, Stack is a good choice for this problem. Instead of reading one line at a time, we read the first 50 lines one line at a time, and we put the first 50 lines onto the Stack. We then read the next 50 lines (from line 51 to 100) one line at a time, and we put them onto the Stack. This will reverse lines as the question asked us to do, and by doing this, I have have to store more than 50 lines at any give time.
 
 	function void reverse50
 		while there are 50 lines
@@ -86,7 +86,7 @@ Similar to problem 1, Stack is a good choice for this problem. Instead of readin
 		
 [3. Read the input one line at the time. At any point after reading the first 42 lines, if some line is blank, then output the line that occurred 42 lines prior to that one]
 
-Here, A Queue is a better choice. A Queue process the lines on a first in first out (FIFO) basis. When we read the first line and put it on the Queue, it will appear on the top of the Queue. When we read the last line and put it on the Queue, it will appear on the bottom of the Queue. So if we read a blank line at Line 43, then the line that occurred 42 lines prior to Line 43 is Line 1, thus we could just print the first line on the Queue. Once we print the first line, we remove the first line from the Queue. We then read Line 44 and put on the Queue (Line 44 will be put on the Queue at Line 43 because we removed the first line of the Queue).By doing this, we never stores more than 43 lines of the input at any given time
+Here, A Queue is a better choice. A Queue process the lines on a first in first out (FIFO) basis. When we read the first line and put it on the Queue, it will appear on the top of the Queue. When we read the last line and put it on the Queue, it will appear on the bottom of the Queue. So if we read a blank line at Line 43, then the line that occurred 42 lines prior to Line 43 is Line 1, then we could just print the first line on the Queue. Once we print the first line, we remove the first line from the Queue and read the next line. If Line 43 is not a blank line, we simply remove Line 1 and read the next line. By doing this, we never stores more than 43 lines of the input at any given time, thus this should be a fairly fast process.
 
 	function void never43
 		read the first 42 lines and put them on the Queue
@@ -94,11 +94,13 @@ Here, A Queue is a better choice. A Queue process the lines on a first in first 
 			read the next line
 				if the next line is blank
 					print Line 1 on the Queue, and then remove Line 1 on the Queue
+				else
+					remove Line 1 one the Queue
 		
 [4. Read the input one line at a time and write each line to the output if it is not a duplicate of some previous input line.]
 
-In order to find out whether or not a line is unique, both USet and SSet require comparisons. But if we use SSet, we could sort the lines. Once they are in order, we point remove the duplicated lines by comparing neighbouring lines.  
-	function void unDuplicatedLines
+In order to find out whether or not a line is unique, both USet and SSet require comparisons. But if we use SSet, we could sort the lines. Once they are in order, we can remove the duplicated lines by comparing neighbouring lines. Since we only need to compare two lines at a time, this should be a faster process than using USet. 
+	function void notDuplicatedLines
 		sort all the lines and put into a set s 
 			for(int i =0; i< s.size-2, i++)
 				compare whether two lines are equal (duplicated) by comparing s(i) and s(i+1)
@@ -108,24 +110,48 @@ In order to find out whether or not a line is unique, both USet and SSet require
 [5. Read the input one line at a time and write each line to the output only if you have already read this line before]
 
 
-The same as problem 4, we can use SSet. After sort the set, we could compare the first two lines, and if they are duplicated, we print them out. Otherwise, we compare the second line to the third line, if they are duplicated, we print them out, otherwise, we remove the second line.
+Here, a USet is a better choice. If we use SSet, after we sort the lines, we have to do at two comparisons to a line (the line before and the line after) to find out whether or not it is a unique line. A USet contains n distinct elements; no element appears more than once. Thus, we could put all the distinct elements in the USet, and in the end remove the entire USet. This will leave duplicate lines in the file, and we just print them out. Using USet, we do not have to store a lot of duplicate lines in the USet. So if a file with a lot of duplicate lines does not use more memory than what is required for the number of unique lines. Thus using USet should be faster than using SSet.
 
+	function void duplicatedLines
+		read the lines and put unique lines into USet s
+		remove s
 
 [6. Read the entire input one line at at time. Then output all lines sorted by length, with the shortest lines first. ]
 
-Implements SSet.
-
-
+Here, order is important because we want to sort the lines by length. Thus, a SSet is a better choice. 
+	function void sortByLength
+		sort all the lines by length and put into a set s
+			while the file still has lines left
+				compare two lines at a time
+					if two lines has the same length and the same contents (duplicated)
+						remove one of them
+					else
+						print the first line
+			advance to the next line
+				
 [7. Do the same as the previous question except that duplicate lines should be printed the same number of times that they appear in the input. ]
 
-Implements SSet
+Same as problem 6, order is important here. Thus, SSet is a better choice than USSet. We read the file and sorted the lines by length. In the end, we print out the whole set as it is. 
 
+	function void sortByLength2
+		sort all the lines by length and put into a set s
+		print set s
 
 [8. Read the entire input one line at a time and then output the even numbered lines followed by the odd-numbered lines]
 
+Implements a DeQue. We read through the lines, if it is odd numbered line, we add it to the end of the Queue. If it is even numbered line, we add it to the beginning of the Queue. Using a DeQue, we only need to read through the lines one time. Thus, it should be faster than using Queue or Stack
+
+	function void evenOdd
+		while there are lines in the file
+			read the next line
+				if it is even numbered line
+					add to the beginning of the Queue
+				else
+					add to the end of the Queue
 
 [9. Read the entire input one line at a time and randomly permute the lines before outputting them]
 
+Implements a SSet. After reading through the lines and put them into a sorted set s, we then randomly swap the lines in the set. Finally we print out the whole set s. Since USet only store distinct elements, it might be faster using SSet.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
