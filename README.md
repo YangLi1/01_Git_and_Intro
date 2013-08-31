@@ -66,7 +66,7 @@ Exercises
 
 [1. Read the input one line at a time and then write the lines out in reverse order, so that the last input line is printed first, then the second last input line, and so on]
 
-Here, St is the better choice. A Stack process the lines on a first in first out (FIFO) basis, so when we read a line, and put it on a Stack, the first line will be on the bottom of the Stack, and the last line will be on the top of the Stack. So the lines will be in reverse order. 
+Here, Stack is the better choice. A Stack process the lines on a last in first out (LIFO) basis, so when we read a line, and put it on a Stack, the first line will be on the bottom of the Stack, and the last line will be on the top of the Stack. So the lines will be in reverse order. Since this process only requires one operation, that is, read a line and put onto a stack, it should be fairly fast.
 
 	function void reverse
 		while there are more lines
@@ -80,13 +80,13 @@ Similar to problem 1, Stack is a good choice for this problem. Instead of readin
 	function void reverse50
 		while there are 50 lines
 			read the 50 lines one line at a time and put them onto the Stack
-			print the Stack
+				print the Stack
 		read the left lines that are less than 50 lines, and put these lines on the Stack
-		print the Stack
+			print the Stack
 		
 [3. Read the input one line at the time. At any point after reading the first 42 lines, if some line is blank, then output the line that occurred 42 lines prior to that one]
 
-Here, Queue is a better choice. A Queue process the lines on a last in first out (LIFO) basis. When we read the first line and put it on the Queue, it will appear on the top of the Queue. When we read the last line and put it on the Queue, it will appear on the bottom of the Queue. So if we read a blank line at Line 43, then the line that occurred 42 lines prior to Line 43 is Line 1, thus we could just print the first line on the Queue. Once we print the first line, we remove the first line on the Queue. We then read Line 44 and put on the Queue (Line 44 will be put on the Queue at Line 43 because we removed the first line of the Queue).By doing this, we never stores more than 43 lines of the input at any given time
+Here, A Queue is a better choice. A Queue process the lines on a first in first out (FIFO) basis. When we read the first line and put it on the Queue, it will appear on the top of the Queue. When we read the last line and put it on the Queue, it will appear on the bottom of the Queue. So if we read a blank line at Line 43, then the line that occurred 42 lines prior to Line 43 is Line 1, thus we could just print the first line on the Queue. Once we print the first line, we remove the first line from the Queue. We then read Line 44 and put on the Queue (Line 44 will be put on the Queue at Line 43 because we removed the first line of the Queue).By doing this, we never stores more than 43 lines of the input at any given time
 
 	function void never43
 		read the first 42 lines and put them on the Queue
@@ -97,11 +97,19 @@ Here, Queue is a better choice. A Queue process the lines on a last in first out
 		
 [4. Read the input one line at a time and write each line to the output if it is not a duplicate of some previous input line.]
 
-In order to find out whether or not a line is unique, both USet and SSet require a line to compare with he whole file. But if we use SSet, we could sort the lines. Once they are in order, we point remove the duplicated lines in a very quick process. 
-
+In order to find out whether or not a line is unique, both USet and SSet require comparisons. But if we use SSet, we could sort the lines. Once they are in order, we point remove the duplicated lines by comparing neighbouring lines.  
+	function void unDuplicatedLines
+		sort all the lines and put into a set s 
+			for(int i =0; i< s.size-2, i++)
+				compare whether two lines are equal (duplicated) by comparing s(i) and s(i+1)
+				if the two lines are duplicated
+					remove one of them
+		print set s
 [5. Read the input one line at a time and write each line to the output only if you have already read this line before]
 
-Implements SSet. Same as problem 4, it is easier to find if two lines are duplicated when they are sorted. We only need to compare their neighbour lines, see if they are duplicated, and move to the next two lines for comparison. 
+
+The same as problem 4, we can use SSet. After sort the set, we could compare the first two lines, and if they are duplicated, we print them out. Otherwise, we compare the second line to the third line, if they are duplicated, we print them out, otherwise, we remove the second line.
+
 
 [6. Read the entire input one line at at time. Then output all lines sorted by length, with the shortest lines first. ]
 
