@@ -138,8 +138,11 @@ the same time use find(x) to ensure there is no duplicated lines in the SSet.
 line in the file.
 3.Use a for loop to print out the even numbered lines.
 
-
-
+9.My answer:
+1.Read the entire file and record the number of line.
+2.Create a string array and assign the number of line as its size.
+3.Read the file again and store each line of content in the file to array.
+4.Generate random numbers to print out the content in the array randomly.
 
 
 
