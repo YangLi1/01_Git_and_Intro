@@ -121,6 +121,22 @@ file to read.
 3.Print out the content if add(x) return FALSE.
 4.Keep reading the file until there is no more lines to read.
 
+6.My answer:
+1.Create a SSet structure.
+2.Read the entire file and store each line in SSet by using add(x) method, at 
+the same time use find(x) to ensure there is no duplicated lines in the SSet.
+3.Use compare(x,y) method to order the lines with the shortest line first.
+
+7.My answer:
+1.Create a SSet structure.
+2.Read the entire file and store each line in SSet by using add(x) method.
+3.Use compare(x,y) method to order the lines with the shortest line first.
+
+8.My answer:
+1.Create a arraylist.
+2.Read the file and store each line in the arraylist and record the number of
+line in the file.
+3.Use a for loop to print out the even numbered lines.
 
 
 
