@@ -66,7 +66,7 @@ Exercises
 
 [1. Read the input one line at a time and then write the lines out in reverse order, so that the last input line is printed first, then the second last input line, and so on]
 
-Here, Stack is the better choice. A Stack process the lines on a first in first out (FIFO) basis, so when we read a line, and put it on a Stack, the first line will be on the bottom of the Stack, and the last line will be on the top of the Stack. So the lines will be in reverse order. 
+Here, St is the better choice. A Stack process the lines on a first in first out (FIFO) basis, so when we read a line, and put it on a Stack, the first line will be on the bottom of the Stack, and the last line will be on the top of the Stack. So the lines will be in reverse order. 
 
 	function void reverse
 		while there are more lines
@@ -125,19 +125,18 @@ Note: You should not need to write any real computer code for any of these. Inst
 
 [Exercise 1.4. Suppose you have a Stack, s, that supports only the push(x) and pop() operations. Show how, using only a FIFO Queue, q, you can reverse the order of all elements in s.]
 
-The Stack, s, is a LIFO Queuing discipline. This means that if I do a pop() operation on s, I will get the last element on the Stack. 
-On the contrary, q is a FIFO Queuing discipline. This means that if I do a add(x), where x = the element that is removed by s.  
-	
-	void function reverse
-	while s is not empty
-		do pop() operation on s
-		do add(x) operation on q, where x = s.pop()
+The Stack, s, is a LIFO Queuing discipline. With a FIFO Queue, q, we can easily reverse the order of all elements by simply read the Stack and add to the Queue. 
+
+	function void reverseS
+		while there are still elements in the Stack s
+			read the Stack s and do a pop() operation on the first element
+			put the first element in the Stack s into a Queue, q. 
 
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - A blob is one of the four types of objects in Git. Blob contains the contents of a file. A blob holds a file's data but does not contain any meta-data about the file. 
+1. blob - A blob is one of the four types of object in Git. Blob contains the contents of a file. A blob holds a file's data but does not contain any meta-data about the file. 
 2. tree - A tree is a type of object in Git. A tree object represents one level of directory information. It records blob identifiers, path names, and a bit of meta-data for all the files in one directory. It can have sub tree objects and thus build a complete hierarchy of files and subdirectories. 
-3. commit - A commit is a type of object in Git. A commit object holds meta-data for each change introduced into the repository, including the author, committer, commit date, and log message. Each commit points to a tree object that captures the state of the repository at the time the commit was performed. A commit can have parent commit, and a commit reference back to parent commit 
+3. commit - A commit is a type of object in Git. A commit object holds meta-data for each change introduced into the repository, including the author, committer, commit date, and log message. Each commit points to a tree object that captures the state of the repository at the time the commit was performed. A commit can have parent commit, and a commit reference back to its parent commit 
 4. repo - In Git, a repo, or a repository, is a database containing all the information needed to retain and manage the revisions and history of a project. The Git repository retains a complete copy of the entire project throughout its lifetime.
-5. hash - In Git, a hash is a 160-bit value that are represented as a 40-digit hexadecimal number. The hash value is used to identify files in Git. The has value is also used to represent the name of each object in Git. Hashes can not be inverted. This means that any tiny change to a file causes the hash to change. Thus, Hashes can be used to check a file's integrity.  
+5. hash - In Git, a hash is a 160-bit value that are represented as a 40-digit hexadecimal number. The hash value is used to identify files in Git. The hash value is also used to represent the name of each object in Git. Hashes can not be inverted. This means that any tiny change to a file causes the hash to change. Thus, Hashes can be used to check a file's integrity.  
