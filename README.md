@@ -72,7 +72,7 @@ If that isn't the case, then you should go back to your room and get the usb dri
 
 2. Just as in 1., I would use a Stack to accomplish the task, but to ensure that the whole file is not read in and then out put, I would use a counter to keep track of how many lines have been read in. Once the counter reaches 50, I would stop the program from reading in more lines and instead begin outputting the lines in LIFO order. I would use a while loop that keeps repeating this process until there is nothing left to read in the file.
 
-3. To accomplish the task of reading 42 lines, and then following those 42 lines, checking for an empty line and then printing the line that occurred 42 lines prior to the blank line, would require a queue that stores 43 lines of text maximum. The queue would be the best option because once the 44th line would be read, it would replace the very first line that was read by the program, which is acceptable because the first line isn't needed anymore. When a blank line would be encountered, it would be easy to access the line of text that was located 42 lines prior to it because it would be the first element to be deleted from the queue due to its "first in, first out" structure.
+3. To accomplish the task of reading 42 lines, and then following those 42 lines, checking for an empty line and then printing the line that occurred 42 lines prior to the blank line, a queue that stores a maximum of 43 lines of text would be required. The queue would be the best option because once the 44th line would be read, it would replace the very first line that was read by the program, which is acceptable because the first line isn't needed anymore. When a blank line would be encountered, it would be easy to access the line of text that was located 42 lines prior to it because it would be the first element to be deleted from the queue due to its "first in, first out" structure.
 
 4. For a program that would only print a line of text that is not a duplicate, I would recommend using an SSet because it is an ordered set. I would first store each occurrence of a line in the SSet in alphabetical order (since we're using a text file). After reading in a line, I would compare the line to the contents of the SSet. If a match isn't found, I would store the line in the SSet and then output the line. If a match was found, I would not store the line, nor would I output it.
 
@@ -97,7 +97,7 @@ Note: You should not need to write any real computer code for any of these. Inst
 #### 5. Define/explain each of the following terms, as they relate to git.
 
 1. blob - A blob is essentially a file in a git repository, such as the README.md file. This is how git represents a file.
-2. tree - The directory for the repo, the tree contains indentifiers, the location, and metadata for the repo.
+2. tree - The directory for the repo, the tree contains identifiers, the location, and metadata for the repo.
 3. commit - Commits hold the metadata for changes made to files in the repository. Commits make the changes permanent.
 4. repo - The outer database (think of it like a container) that contains all of the trees, blobs and anything else related to git.
 5. hash - The unique identifier of each file that is part of the git repository.
