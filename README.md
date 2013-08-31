@@ -76,9 +76,7 @@ Assuming you pushed your repository to github before leaving, you can pull your 
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
-Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
-
-[Your answer here]
+1.3: If you store each character in the string in a list and get(n)==get(size()-n) ever outputs false, the possible values for n being from 0 to size()/2, then the string is an unmatched string. Otherwise it is a matched string.
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
