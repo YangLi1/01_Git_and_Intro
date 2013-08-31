@@ -69,7 +69,10 @@ Assuming you pushed your repository to github before leaving, you can pull your 
 3. Using the List interface, I would read lines one by one, and once the size() returns 43 or more, get(size()-1), and if it is blank, get(size()-42) and output it. Either way remove(size(-42) must be called at the end of the loop to make room for the next line.
 4. Using the USet interface, read in every line, duplicates returning false during the add(x) function and not being added to the set. Then print the entire array.
 5. Using the USet interface, read in every line, checking to see if the element is there using find(x). If it exists already, print the line. If not, it is added to the array.
-6.
+6. Using SSet, read in every line. Duplicates will be found using find(x) and will be stored in a seperate list so that they get printed only once. The size of each string will also be checked as you add each string to the duplicate list in order to sort it as they are added.
+7. Using SSet, do the same as #6 but now the duplicates list will also use find(x) so that if it is a duplicate of a duplicate, another list will be created and will then have to be checked.
+8. Using the List interface, read in even numbers and remove and print them immediately, while odd numbered lines get stored until there are no more lines left and then are removed and printed.
+9. Using the List interface, read in each line. When removing and printing, use remove(size()*random()) to remove a "random" line from the listing until size() outputs 0.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
