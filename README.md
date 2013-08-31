@@ -65,32 +65,59 @@ Exercises
 #### 3. Morin, Exercise 1.1 (p. 23)
 
 [1. Read the input one line at a time and then write the lines out in reverse order, so that the last input line is printed first, then the second last input line, and so on]
-Implements Deque Interface
-	void function reverse
-		while the file has next line
-			remove last line and add to first line
+
+Here, Stack is the better choice. A Stack process the lines on a first in first out (FIFO) basis, so when we read a line, and put it on a Stack, the first line will be on the bottom of the Stack, and the last line will be on the top of the Stack. So the lines will be in reverse order. 
+
+	function void reverse
+		while there are more lines
+			read one line and put it on the Stack
+		print out the Stack
+
 [2. Read the first 50 lines of input and then write them out in reverse order. Read the next 50 lines and then write them out in reverse order. Do this until there are no more lines left to read, at which point any remaining lines should be output in reverse order]
-Implements Uset Interface
 
-	void function reverse50
-		add all the lines to List s
-		loop through the list s at a increase of every 50 lines
-			in each 50 lines of block, put the first element in a variable temp
-			then loop through each of the 50 position, and swap last element to position 0, second to last element to position 1, and so on
-			finally put the element in variable temp at the last position of the 50-line block
-			
-[3. Read the input one line at the time. At any point after reading the first 42 lines, if some line is blank, then output the line that occured 42 lines prior to that one]
-Implements Uset Interface
-	void function never43
-		add all the lines to List s
-		loop through the List s from 43 to the end at a increase of every single line
-			if s(i) is blank
-				print out s(i-42)
-				
+Similar to problem 1, Stack is a good choice for this problem. Instead of reading one line at a time, we read the first 50 lines one line at a time, and we put the first 50 lines onto the Stack. We then read the next 50 lines (from line 51 to 100) one line at a time, and we put them onto the Stack. This will reverse lines as the question asked us to do.
+
+	function void reverse50
+		while there are 50 lines
+			read the 50 lines one line at a time and put them onto the Stack
+			print the Stack
+		read the left lines that are less than 50 lines, and put these lines on the Stack
+		print the Stack
+		
+[3. Read the input one line at the time. At any point after reading the first 42 lines, if some line is blank, then output the line that occurred 42 lines prior to that one]
+
+Here, Queue is a better choice. A Queue process the lines on a last in first out (LIFO) basis. When we read the first line and put it on the Queue, it will appear on the top of the Queue. When we read the last line and put it on the Queue, it will appear on the bottom of the Queue. So if we read a blank line at Line 43, then the line that occurred 42 lines prior to Line 43 is Line 1, thus we could just print the first line on the Queue. Once we print the first line, we remove the first line on the Queue. We then read Line 44 and put on the Queue (Line 44 will be put on the Queue at Line 43 because we removed the first line of the Queue).By doing this, we never stores more than 43 lines of the input at any given time
+
+	function void never43
+		read the first 42 lines and put them on the Queue
+		while there are still lines in the file
+			read the next line
+				if the next line is blank
+					print Line 1 on the Queue, and then remove Line 1 on the Queue
+		
 [4. Read the input one line at a time and write each line to the output if it is not a duplicate of some previous input line.]
-Implements USet Interface. 
 
-	void function delet
+In order to find out whether or not a line is unique, both USet and SSet require a line to compare with he whole file. But if we use SSet, we could sort the lines. Once they are in order, we point remove the duplicated lines in a very quick process. 
+
+[5. Read the input one line at a time and write each line to the output only if you have already read this line before]
+
+Implements SSet. Same as problem 4, it is easier to find if two lines are duplicated when they are sorted. We only need to compare their neighbour lines, see if they are duplicated, and move to the next two lines for comparison. 
+
+[6. Read the entire input one line at at time. Then output all lines sorted by length, with the shortest lines first. ]
+
+Implements SSet.
+
+
+[7. Do the same as the previous question except that duplicate lines should be printed the same number of times that they appear in the input. ]
+
+Implements SSet
+
+
+[8. Read the entire input one line at a time and then output the even numbered lines followed by the odd-numbered lines]
+
+
+[9. Read the entire input one line at a time and randomly permute the lines before outputting them]
+
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
