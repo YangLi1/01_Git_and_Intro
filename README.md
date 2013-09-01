@@ -83,7 +83,7 @@ If that isn't the case, then you should go back to your room and get the usb dri
 
 7. My approach to this question is exactly the same as the approach to my answer to 1.1.6, with the only change being that I would not check for duplicate lines, since all duplicate lines are to be printed.
 
-8. A USet would be the best interface to use in this instance because the lines do not need to be ordered. Once all of the lines were read in to the USet, I would use two loops to print the text. The first loop would start at the very first line (index 0) and print every other line until the end of the USet is reached. Once that loop has completed, a loop that starts at index 1 and prints every other line would be used.
+8. A List would be the best interface to use in this instance because the lines do not need to be ordered. Once all of the lines were read in to the List, I would use two loops to print the text. The first loop would start at the very first line (index 0) and print every other line until the end of the List is reached. Once that loop has completed, a loop that starts at index 1 and prints every other line would be used.
 
 9. Ideally, I would use the List interface to accomplish the task of printing the lines in any order because they are the easiest to shuffle the contents. After the contents have been shuffled, I would then just print the lines starting from the beginning of the list and ending at the end of the list.
 
