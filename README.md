@@ -64,7 +64,8 @@ But again, another form of redundancy is not a bad thing, but the M: drive can b
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+You should simply clone the repo on one of the lab computers. This is the best solution, because of the remote nature of Git. Because Git keeps all of the changes as well as the current copy of the file, you can easily download the newest copy, but be sure to push
+ it back to the remote server whenever you stop working, if not more frequently. 
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
