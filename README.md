@@ -69,7 +69,16 @@ You should simply clone the repo on one of the lab computers. This is the best s
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1.1 Using a LIFO queue, you use a loop that reads in all of the lines of input starting at 0 and continuing until there is no other unread lines, utilizing the add(x) method to add each input into the queue. Then, you can use the remove() method to take out and read the most recently read input, which will be the last input, then second to last, ad infinitum until there are no other inputs left.
+
+1.2 I would begin with using a stack. I would begin with a method with an integer variable, called index. Then,there would be an if statement where if the total number of inputs minus the index variable is less than 50 ,then the method would simply read them in, and then utilize remove() to read the most recent input, followed by the penultimate, so on and so forth, followed by a return statement to exit the method.
+If there was more than 50 lines left, I would write the next 50 lines in, incrementing the index variable by 1 each time, until I have read in 50. Then, using the remove() method, they would be printed and taken out. This will be followed by a recursive call to the method.
+
+1.3 I would start with a FIFO Queue with 43 slots.. As input is read into the queue, they are added in using the add(x) method. After the queue reaches a size of 42, the next input is checked to see if it is blank, and then added to the queue. If it is blank, then the input in slot 43 is selected as an output, and is subsequently removed with the remove() method. 
+
+1.4 I would start with a List data structure. The method begins with an initial Boolean variable called “found”, initially set to false.. While the program reads in input using a loop, it checks to see if the input has been read into before by utilizing a loop and the get(t) method, and if it is found, the “found” variable is set to true. If “found” is false, then the input is written to the output, and then added using the add(input,0) method to the List. If “found” is true, then nothing is done with it, and the program proceeds to the next line. When there is no more unread input, the program terminates.
+
+1.5 I would start with a List data structure. The method begins with an initial Boolean variable called “found”, initially set to false.. While the program reads in input using a loop, it checks to see if the input has been read into before by utilizing a loop and the get(t) method, and if it is found, the “found” variable is set to true. If “found” is false, then the input is  added to the List using the add(input,0) method. If “found” is true, then the input is written to the output. When there is no more unread input.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
