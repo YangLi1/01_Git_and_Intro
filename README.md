@@ -82,8 +82,8 @@ Exercise 1.2
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - The meat of a file, but does not have any defining features, save for a hash code that allows it to be identified. They can contain the contents of any kind of file, and are saved as binary objects.
+2. tree - The Git object that holds blobs together, holding the hash codes for specific blobs,  and provide organization for manipulating a specific repo.
+3. commit- Git object that organizes a repo, connecting trees via hash codes, while being able to indicate when the repo was saved, and provides a sort bookmark indicating where the program was at the time the commit object was created.
+4. repo - Short for repository, a form of directory where projects using git are periodically saved, utilizing version control and redundancy to help organize a program during its development cycle.
+5. hash - Algorithmically generated string that contains huge amounts of information regarding a specific file, with practically no chance for duplication.
