@@ -56,15 +56,21 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+Yes, it is okay to have the local copy of my repo on a USB drive and carry it around, but this is more risky. It's legal because you can sync with github from anywhere, but this method is less practical simply because we could lose the local repo. Keeping it on the M: drive is much safer and is still legal, and is therefore prefered.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+Clone the repo from github that way I can work on it from the local machine. Of course I would have to have commited all my work from before so that way id be working on the current version.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
+1.
+read file into an array and then write another for loop starting from the end reading array backwards into new array.
+	
+2. using a for loop of  for (int i=0,  i= size/50, i++) to make it run through however many sets of 50s there are and then nesting  {  
+for (int j=(i+1)*50, j> ((i+1)*50)-50 , j--) to print out that  multiple of 50 from 50 to 49 ect.
+}
 
-[Your answer here]
+3.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
@@ -74,8 +80,9 @@ Note: You should not need to write any real computer code for any of these. Inst
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - binary data. "it references nothing and is referenced only by tree objects."
+2. tree - Tree objects point to blobs and possibly to other trees as well. A tree is a new version of the same project after a commit or deviation from a branch
+3. commit - an update or change a branch.
+4. repo - the repository, where the code is located.
+5. hash - the 40 digit assigned algorithem that references to a work.
+
