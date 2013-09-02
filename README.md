@@ -75,7 +75,10 @@ You should simply clone the repo on one of the lab computers. This is the best s
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
+Exercise 1.2
+	Stacks share the same properties as Dyck words because neither can have a negative sequence of +1s or -1s. The push() methods of stacks is equivalent to a +1 in a Dyck word, and the pop() method is equivalent to a -1. In a Stack, you can never have more pops than pushes in any situation, because eventually there will be nothing left in the Stack to pop. In Dyck words, the sum of the prefix cannot be negative, similarly to how Stacks cannot have more pops than pushes. 
+
+
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
