@@ -64,7 +64,10 @@ Clone the repo from github that way I can work on it from the local machine. Of 
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 1.
-read file into an array and then write another for loop starting from the end reading array backwards into new array.
+
+      I believe a first in last out approach would be best as you can push the newest element and removing the prime version of that element. then doing that process to the third. EX: 1,2,3 --> push the 2: 1,2,3,2 pop the original 2: 1,3,2 then repeat for the one to produce 1,3,2,1 then pop the original 1 as it is the next priority to be removed, and the list will be reversed.
+ 
+
 	
 2. using a for loop of  for (int i=0,  i= size/50, i++) to make it run through however many sets of 50s there are and then nesting  {  
 for (int j=(i+1)*50, j> ((i+1)*50)-50 , j--) to print out that  multiple of 50 from 50 to 49 ect.
