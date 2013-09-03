@@ -78,7 +78,7 @@ You should clone the repository from Github, and go about your work as normal.  
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
+Exercise 1.4: This problem is fairly simple, in practice.  To begin, we need to push(x) every element we want to be in Stack s.  Then, we pop() them all out and enqueue(x) them in our FIFO Queue, q.  After every element of s has been transferred to q, we then perform the dequeue() function on each and push(x) it back into s.  The elements of s will be reversed.  For example, say we're dealing with the numbers 0 through 9.  We start with the contents of s as such: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.  Since 9 was our Last In, it is the First Out and the First In for q.  After the full transfer, the elements of q, from first to last, will be 9, 8, 7, 6, 5, 4, 3, 2, 1, 0.  9 was the First In, and so it is the First Out for q, and it is pushed back into s, followed by the others, so the final order of s is: 9, 8, 7, 6, 5, 4, 3, 2, 1, 0.  As promised, this is the reverse of the original order of the elements of s.
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
