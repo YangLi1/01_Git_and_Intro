@@ -78,8 +78,26 @@ ArrayDeque (for our purposes, a limit of 43 seems logical). While the number of 
 the ArrayDeque and continue to 43 elements. After 43 elements have been accrued, each time a new line is read, the "first" element of the ArrayDeque is removed, regardless of whether or not the read line is an empty string. 
 If the read string is empty, the removed element is displayed.
 
-4)
+4)Using an ArrayStack (or any other quickly searchable data structure) as each line is read in, have it checked against current elements in the ArrayStack. If it already exists in the Stack, move onto the next line. If it does not,
+add it to the Stack and send it to the output.
 
+5)Using the same principle as 1.1_4, instead of sending lines to output when they do not already exist in the stack, send them only when they DO already exist in the Stack.
+
+6)This problem is a bit more complicated. Whether it is more efficient to sort the stack as each new element is added and then search or to search for each element and then sort once at the end is not entirely clear. For the sake of
+simplicity, I will choose to sort only once. As each line is read in, it will be checked against the Stack to see if a duplicate already exists. If a duplicate exists, the line is not added and the program continues to the next line.
+While the complexity of the duplicate search grows as the list grows, it is difficult to say whether this is more or less efficient than sorting by length and searching by length for each new entry. When all lines have been read, sort
+the entries by length and then by alphabetical order for entries of the same length. This is most quickly done by an iterative, multithreaded implementation of the QuickSort or Quick3 algorithm so that the least elements are at the 
+top of the Stack. At this point, remove each element and send it to the output.
+
+7)Apply all the same ideas in 1.1_6 except add a variable to each Stack entry including the number of times the element has appeared in the read-in (simply add a new function which iterates the variable by one for each subsequent 
+appearance). When it comes time to output the entries, use a loop to iterate the printing via this new variable.
+
+8)Read all lines into an ArrayStack and then simply get/output the even numbered lines via a +2 iterated loop, subtract n-1 elements from the loop control variable, and then get/output the odd-numbered lines.
+
+9)Read in all lines to an ArrayStack. At this point, implement a decrementing for/while loop with the control variable being a value size-1 in terms of the Stack size. Inside the loop, employ a RNG to remove a "random" element from the
+Stack --ex: get/remove(random()*(size-1))-- NOTE: the text is not totally clear on whether or not the list interface remove(i) method retruns the value at Xi or not. If it does not, then inside the loop a variable would store the generated
+number and apply it to both methods get(i)/remove(i). Not being completely familiar with RNG and their operational time, I'm not sure if this path or randomizing the list itself and outputting in order would be more efficient. I find this
+method more creative.
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
