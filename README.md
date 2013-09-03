@@ -60,7 +60,7 @@ No, it doesn't defeat the entire purpose of git, but it is a bad idea. You need 
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+You should just clone your repo from git's servers. You can then make whatever changes you need to make, and push your change. When you get back to your USB drive, you then can merge the two and fix whatever errors, if any, occur.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
