@@ -28,6 +28,12 @@ Read only the following:
   * Object store pictures
   * Git concepts at work (read all)
 4. Chapter 21: Git and Github
+  * Repo for Public Code
+  * Creating a GitHub Repository
+  * Forks
+  * Creating Pull Requests
+  * Managing Pull Requests
+  * Coding Models
 
 **Open Data Structures in C++**. Morin. 
 
@@ -56,26 +62,35 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+No, it is really easy to lose a USB drive, the M Drive is safer because it is backed up repeatedly, but having it backed up online is the safest.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+git pull latest version
 
-#### 3. Morin, Exercise 1.1 (p. 23)
+#### 3. Morin, Exercise 1.1 (p. 26)
 
-[Your answer here]
+1.read the file backward, printing each line
+2.if new lines exist(read lines into array, print them out backward from the last of the array if greater than 50, clear array )
+3. read new lines if line == "" move pointer+100lines print line, move pointer back 100 lines
+4.read line, if line != arrayOfUniqueLines(all) add to array OfUniqueLines, print unique liens
+5.readline, if line != arrayOfUniqueLines(all) add to array OfUniqueLines, print all other lines
+6.copy 4 shell sort by size
+7.read line shell sort by size
+8.read all lines, get count/2 if if count ==0 end, else{ if( line.getCharcterCount/2==0) output line;) else(move line to back)} print remaining lines// the odd numbered ones  
+9.read all lines, get random number; get random line; print random line; remove random number in array;
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
+you would from the bottom of the stack add to the top of the queue, and then remove the bottom of the stack, doing this in a loop until the stack was empty
+then you would remove all the items in the queue back into the stack
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - a binary large object, it contains a  version of the file
+2. tree - a level of directory information with blob identifiers and path names
+3. commit - hold meta data about the changes sumbitted to the repository
+4. repo - short name for a repository, holds the main version of the files which people work off of and submit changes to
+5. hash - a unique identifier for a commit and the files inside
