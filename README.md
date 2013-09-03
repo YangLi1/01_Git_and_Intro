@@ -64,7 +64,15 @@ most recent changes that you did on your USB drive to GitHub.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+[Your answer here]1. Stack: Stack allows for a last-in-first-out method
+2. List & Stack: in List multiple lines of input can be added at one time, then use Stack to remove the lines in reverse order
+3. List: read the first 42 lines and then get(i) each next line and see if blank. If blank then get(i) the blank line minus 42 and output.
+4. USet: USet does not allow duplicates. Read each line and before adding it use find(x) to see if the line has already been read. If it has do not add but if it has not then add.
+5. USet & List: USet does not allow duplicates. add(x) each line one at a time and if the line already exists in the USet (find out through find(x)), add the line to a List
+6. SSet: Use the compare(x,y) to sort the lines and remove duplicate lines through find(x).
+7. SSet: Use the compare(x,y) to sort the lines
+8. List: Add all the input and then output the even through get(i) and a for loop, then output the odd
+9. USet: USet is an unordered set of unique elements. Use random number to randomly pick i and get(i)
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
