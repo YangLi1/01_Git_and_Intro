@@ -64,7 +64,7 @@ most recent changes that you did on your USB drive to GitHub.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-1. Stack: Stack allows for a last-in-first-out method
+1. Stack: Stack allows for a last-in-first-out method so use this to print the lines in reverse.
 2. List & Stack: in List multiple lines of input can be added at one time, then use Stack to remove the lines in reverse order
 3. List: read the first 42 lines and then get(i) each next line and see if blank. If blank then get(i) the blank line minus 42 and output.
 4. USet: USet does not allow duplicates. Read each line and before adding it use find(x) to see if the line has already been read. If it has do not add but if it has not then add.
@@ -78,7 +78,7 @@ most recent changes that you did on your USB drive to GitHub.
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-1.2: A relationship between Dyck words and Stack push(x) and pop() operations is the addition and removal of +/- 1's to get a Dyck word. Stack push(x) and pop() operations can be used to ensure that the prefix of a Dyck word is positive. An if statement can be run where if the prefix is negative, a +1 must be added through Stack push(x) in order to make a Dyck word. If the prefix is not negative then there it is a Dyck word.
+1.2: A relationship between Dyck words and Stack push(x) and pop() operations is the addition and removal of +/- 1's to get a Dyck word. Stack push(x) and pop() operations can be used to ensure that the prefix of a Dyck word is positive. An if statement can be run where if the prefix is negative, a +1 must be added through Stack push(x) in order to make a Dyck word. If the prefix is not negative then it is a Dyck word.
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
