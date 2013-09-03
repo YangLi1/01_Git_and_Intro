@@ -64,7 +64,7 @@ You should clone the repository from Github, and go about your work as normal.  
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1. This can be accomplished by reading each line into a Stack, and then removing and printing each line.  Since Stacks use LIFO, the input will be reversed.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
