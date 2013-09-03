@@ -68,9 +68,19 @@ Since you should have uploaded your latest version to the github website, you sh
 
 2. For this problem I would use both FIFO and LIFO (DEQUE). If we group the 50 lines of code into batches we can see how this will work effectively. Each batch of 50 lines are going to use the LIFO method within themselves, however, once the second 50 lines of code (2nd batch) is introduced you will place them beyond the first batch which utilizes FIFO method. Basically the second batch would be queued beyond the first batch which means that the first batch would read line 50, 49 etc then after it completes the 2nd batch would start at 99, 98 etc because we used LIFO in the individual batches and FIFO over all batches (whole system).  
 
-3. Since order matters in this question I would use the SSet. The 
+//3. Since order matters in this question I would use the SSet. The 
 
-4. 
+//4. 
+
+//5.
+
+//6.
+
+//7.
+
+//8. By using a Deque when can add line 0 to the front of the queue by addFirst(line 0). After that we could (addFirst(2) + 2)
+
+9. I would use a Deque because you can add to the front (addFirst(x)) and the back (addLast(x)) of the queue which if you call each operation randomly, you will randomize the order before they are printed. 
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
  
