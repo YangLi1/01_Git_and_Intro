@@ -1,3 +1,6 @@
+Author
+==========
+"Turner, Chace", turnerce
 01_Git_and_Intro
 ================
 
