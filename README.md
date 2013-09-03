@@ -74,8 +74,8 @@ Note: You should not need to write any real computer code for any of these. Inst
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - The data stored in each version of a file is a "blob" or a binary large object.  So each time we create a new commit of a file, a blob is created to store that version of the file.
+2. tree - A tree is a directory that contains the data related to all the files on that level.  It contains the structure of repositories and their files so that they can have a hierarchy of all the directories.
+3. commit - A commit is an object that holds the data necessary for each change introduced to a repository.  This includes the author, committer, commit date, and log message.  Commits reference a tree object in order to update the state of the repository at that time.
+4. repo - A repository is a database containing all the information in regards to all the files related to a project, and all the revisions related to those files.  Specifically a git repository contains all the working files in a repository but also a copy of the repository itself.
+5. hash - A hash is a unique identifier for an object and can be used to refer to that object after the hash function has created the identifier.  It is used for both security reasons and performance reasons and allows git to give each version a unique identifier to be tracked by.  Statistically no two files or versions should ever have the same hash value, although in theory collisions may occur.
