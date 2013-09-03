@@ -74,7 +74,7 @@ You clone the homework offline and start working on it again from scratch. But f
 8.I would use the last in first out approach. I would use 2 for loops. The first for loop would input each even numbered line and inside that for loop there would be a while loop so that after the for loop had gone to the end of the input it would print them all back out in normal order. After that the second for loop would do the same thing only with odd numbered lines.
 9.I would use a while loop. During each iteration of the loop a line would be input and add(x) would be used to store the line, also during each iteration a counter would increase by 1. I would make the storing of the lines random by using a random number generator to in place of x in the add(x). The random number would be in-between 0 and the number of lines stored. Then at the end I would use a while loop to print all of the lines out.
 
-#### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
+### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 1.3
 
