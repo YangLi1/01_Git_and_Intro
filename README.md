@@ -65,7 +65,8 @@ Clone the repo from github that way I can work on it from the local machine. Of 
 #### 3. Morin, Exercise 1.1 (p. 23)
 1.
 
-      I believe a first in last out approach would be best as you can push the newest element and removing the prime version of that element. then doing that process to the third. EX: 1,2,3 --> push the 2: 1,2,3,2 pop the original 2: 1,3,2 then repeat for the one to produce 1,3,2,1 then pop the original 1 as it is the next priority to be removed, and the list will be reversed.
+      I believe a first in last out approach would be best as you can push the newest element then the second and so on til you get to the first element. Then keep popping for as many elements as there were.
+ EX: 1,2,3.  push the 3: 1,2,3,3. push 2: 1,2,3,3,2. push 1: 1,2,3,3,2,1. pop: 2,3,3,2,1. pop: 3,3,2,1. pop once more and list is reversed.
  
 
 	
@@ -78,9 +79,9 @@ for (int j=(i+1)*50, j> ((i+1)*50)-50 , j--) to print out that  multiple of 50 f
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
-by pushing the second newest element so its now "on top" of the stack, and then poping the version of that element that was second newest, then repeating that process with the third then fourth until you get to the original bottom of the stack it will be reversed.
-for example : 1,2,3,4 --> push: 1,2,3,4,3 then pop: 1,2,4,3 --> push: 1,2,4,3,2 then pop: 1,4,3,2, --> push: 1,4,3,2,1 then pop: 4,3,2,1. 
- 
+CHOICE IS 1.4
+
+by pushing all the elements onto a stack and then popping them all, they will be reversed.
 
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
