@@ -69,16 +69,18 @@ You clone the homework offline and start working on it again from scratch. But f
 3.I would use a LIFO queue. I would use a while loop to read and store lines of code. If there is ever a blank line then it prints all 42 lines of code that are stored. It can never store more than 43 lines so it always throws away the oldest line to store the newest line of code
 4.I would use a while loop to keep reading a storing all of the inputs, during each iteration before I outputted the input I would use find(x) to check and see there were any identical lines of code that had already been input
 5.I would use a while loop to read and store each input. I would use find(x) to search through the inputs and if there was already one of something stored than I could output the line that was just input
-6.
+6. I would use a while statement to read in every line. I would then store each line in an array list. I would then go through the array and bubble sort the array list by length. I would then go through the array list using while loop and an if statement to check and see if there are any lines of the same length, I would have it delete duplicates. then use a while loop to go back through and read the lines in length order
 7.
 8.
 9.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
-Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
+1.3
 
-[Your answer here]
+A stack is last in first off approach. So I would use a while loop to cycle through the characters of the string and during each iteration it would check to see if the character being looked at is the same as the one after it. I would do this by using .equals to compare the current and next character in the string.The program would compare the character being added to the stack to the one getting popped off.
+
+
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
