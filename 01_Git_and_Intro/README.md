@@ -67,7 +67,10 @@ You should clone your repo from Github to the local computer you're on. After wo
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+	1. I would use a LIFO queue for this task.  Once you reach the end of the lines, the last line read in would be the first one you want to print when printing in reverse order.
+	2. I would continue to use a LIFO queue for this task.  With the same goal, specify to read 50 lines of a document, print them in LIFO order, then read the next 50 lines and continue.
+	3. For this task I would use a list structure.  Once you reach a blank line after line 42, the first element in your list at the time will be the line you want to print (42 lines before you reach the blank one).  You would have to shift your list each time you read a line to be sure not to store over 42 lines at once.
+	4. I would use a USet structure. As you read new lines, check against a created stored set to see if they have already been added.  If so, skip that line. If not, add that line to the set and print it in the output. 
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
