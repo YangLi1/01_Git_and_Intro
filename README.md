@@ -56,11 +56,11 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+After reading the Git book I believe it is a good idea to keep your local repo on a USB drive or the M drive because you can still work on your project even if you can't get access to the Github website. With that said you still need to make sure your latest copy of your repo is also uploaded to the Github website before closing out your work on your local drive if possible. This will ensure that you have the latest copy both locally and on the web.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-If you forgot to bring your USB drive with your repo on it, you should go the the github website and clone your latest version to your local machine. 
+Since you should have uploaded your latest version to the github website, you should go the the github website and clone your latest version to your local machine. 
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
