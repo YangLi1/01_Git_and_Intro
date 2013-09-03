@@ -60,7 +60,7 @@ I do not believe it is okay to keep the local repository on a USB drive.  Unless
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+Clone my repo from github and create a new branch off of the repository.  Then when I have my USB again I can merge the branch with the master branch on my local repository and commit the changes.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
