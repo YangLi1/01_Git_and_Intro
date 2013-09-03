@@ -64,9 +64,17 @@ Since you should have uploaded your latest version to the github website, you sh
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1. The data structure that I would use is LIFO (last-in-first-out). I would use this data structure because you are reading an input one line at a time and then you want to print the lines in reverse order which means that the last line read in should be the first one out which is the functionality of LIFO. 
+
+2. For this problem I would use both FIFO and LIFO (DEQUE). If we group the 50 lines of code into batches we can see how this will work effectively. Each batch of 50 lines are going to use the LIFO method within themselves, however, once the second 50 lines of code (2nd batch) is introduced you will place them beyond the first batch which utilizes FIFO method. Basically the second batch would be queued beyond the first batch which means that the first batch would read line 50, 49 etc then after it completes the 2nd batch would start at 99, 98 etc because we used LIFO in the individual batches and FIFO over all batches (whole system).  
+
+3. Since order matters in this question I would use the SSet. The 
+
+4. 
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
+
+
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
@@ -74,8 +82,8 @@ Note: You should not need to write any real computer code for any of these. Inst
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - A blob is the contents of a file. Blob names are unique, meaning that there is only one name for each blob. 
+2. tree - A tree in git helps to keep track of what files we have. It points to blobs and other trees. 
+3. commit - A commit does 3 primary things in git. First it makes a new commit object that holds metadata (author, committer, commit date and log message). Secondly, it makes a new blob if things have changed in a file. Latestly, it makes a duplicate tree and points to the same blobs in the previous tree if the contents didn't change in the blob, if contents did change it points to the new blob that contains the new changes. 
+4. repo - In git the repo keeps track of the entire project from start to finish. It contains all information so that a complete working copy of all the files can be used. 
+5. hash - A hash in git is a long string that takes 40 bytes of hexadecimal to produce in which each hash is unique. Each hash is assigned to a blob in which no two blobs will theoretically (at least in github) have the same hash value. An example of a hash in git is 3b18e512dba79e4c8300dd08aeb37f8e728b8dad.  
