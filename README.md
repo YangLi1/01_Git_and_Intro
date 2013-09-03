@@ -63,28 +63,26 @@ Yes, it is okay to have the local copy of my repo on a USB drive and carry it ar
 Clone the repo from github that way I can work on it from the local machine. Of course I would have to have commited all my work from before so that way id be working on the current version.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
-1.
-
-by pushing all the elements onto a stack and then popping them all off and putting those popped elements into an array list, they will be reversed 
+1. by pushing all the elements onto a stack and then popping them all off and putting those popped elements into an array list, they will be reversed 
 
 	
-2. using a for loop of  for (int i=0,  i= size/50, i++) to make it run through however many sets of 50s there are and then nesting  {  
+2.  using a for loop of  for (int i=0,  i= size/50, i++) to make it run through however many sets of 50s there are and then nesting  {  
 for (int j=(i+1)*50, j> ((i+1)*50)-50 , j--) to print out that  multiple of 50 from 50 to 49 ect.
 }
 
-3. i would use a queue then pop off the first one after the size of the queue is 42 and add the current line at that time. then when the line is blank save the oldest item in the queue and report that.
+3.  i would use a queue then pop off the first one after the size of the queue is 42 and add the current line at that time. then when the line is blank save the oldest item in the queue and report that.
  
-4. Using a list, run through the list, and if it's a duplicate, do not write it out.
+4.  Using a list, run through the list, and if it's a duplicate, do not write it out.
 
-5. Using a list, run through the list, and if it has already been seen at least  once, then write it out.
+5.  Using a list, run through the list, and if it has already been seen at least  once, then write it out.
 
-6. make a list, sort the list from shortest to longest, then print out the lines if the same line has not been printed already.
+6.  make a list, sort the list from shortest to longest, then print out the lines if the same line has not been printed already.
 
-7. make a list, sort the list from shortest to longest, then print out all lines in list.
+7.  make a list, sort the list from shortest to longest, then print out all lines in list.
 
 8. make a list, read through the list twice, fist printing out the lines that are even, then run through a second time doing every odd line.
 
-9. read in all the lines into an array list, and then have it shuffle using random indexes. 
+9.  read in all the lines into an array list, and then have it shuffle using random indexes. 
 
 
 
