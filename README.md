@@ -66,6 +66,7 @@ You should clone the repository from Github, and go about your work as normal.  
 
 1. This can be accomplished by reading each line into a Stack, and then removing and printing each line.  Since Stacks use LIFO, the input will be reversed.
 2. This time, instead of reading in the entire file, a loop merely reads in 50 lines at a time, putting each line into a Stack.  It then prints each of those lines from the Stack.  Next, it moves on to the next 50 lines in the file and so on.  Each set of 50 lines will be reversed because Stacks utilize the LIFO queueing discipline.  If there aren't 50 lines remaining, it will fill the Stack with however many lines are remaining.
+3. I would implement a FIFO Queue.  I would initially read the first 42 lines into the Queue without checking anything.  For every line after that, if it is blank, I would removeFirst() and print it.  If the line is blank, then the first item in the Queue would only be removed.  A Queue is used instead of a Stack, as in the previous parts, because Queues are FIFO.  This is important so that the correct line is removed and printed in the case of a blank line.  A LIFO Stack would merely print a blank line, or the 42nd element of the Stack, depending on whether the line is checked before or after it is put into the Stack.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
