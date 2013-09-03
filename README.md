@@ -56,26 +56,34 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+Yes, but you still need to commit changes to your repo on github incase you forget your USB drive or something happens to it so you will still be able to access changes to your local repo.  Same goes for the M: drive, if it is unavailable then you will not have access.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+Clone a copy of your repo to the computer you are using in the lab. 
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
-
+1. ArrayStack
+2. ArrayDeque
+3. DLList
+4. ArrayDeque
+5. ArrayDeque
+6. ArrayStack
+7. RootishArrayStack
+8. SEList
+9. SkiplistList
+ 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
+A relationship between a dyck word and the push() and pop() operations of a Stack is that as the sum of any prefix of the sequence is never negative for a dyck word, the push() and pop() operations can only be performed at the top of the stack.  The push() function pushes a value onto the stack, while the pop() function takes the top value and assigns it to a specified variable, so at no point can you push() or pop() to any random point or end of the stack just as the sum of any prefix of a sequence can never be negative in a dyck word.
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - binary large object that refers to a variable or file containing any data whose internal structure is ignored by the program.
+2. tree - represents one level of directory information, can recursively reference other subtree objects to build complete file hierarchys and subdirectories.
+3. commit - holds metadata for introduced changes to a repo and points to a tree object that captures the repo state at the time it was performed.
+4. repo - a database containing all the information needed to retain and manage the revisions and history of a project.
+5. hash - Computes the object ID value for an object with specified type with the contents of the named file (which can be outside of the work tree), and optionally writes the resulting object into the object database.
