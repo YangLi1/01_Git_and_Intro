@@ -57,9 +57,8 @@ Exercises
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
 While in theory you can keep a local copy of your repo on a USB drive, it is an inefficient way to work. Additional redundancy is always a good thing, but in this case, it is highly unnecessary. Due to the nature of Git, you do not need to 
-bring a USB drive around with you wherever you go. Using Git, you can easily clone the repo and have it at any computer, with any and all changes you have pushed onto the remote server. Having a copy on the USB requires more effort and is ultimately
-unnecessary. That being said, the greater number of redundant systems, the less likely failure will occur. There will always be scenarios where having a repo on a USB drive can be useful, but they are few and far between. Without a doubt, the USB drive 
-should not be a primary tool for storing your data, but things do tend to break when you need them most. I would also hesitate to put it on the M: drive, because it takes a much longer time to access the M: drive and download the repo, which is terribly inefficient.
+bring a USB drive around with you wherever you go. Using Git, you can easily clone the repo and have it at any computer, with any and all changes you have pushed onto the remote server. Having a copy on the USB requires more effort and can actually cause changes that have been made revert to an earlier state. That being said, the greater number of redundant systems, the less likely failure will occur. There will always be scenarios where having a repo on a USB drive can be useful, but they are few and far between. Without a doubt, the USB drive 
+should not be a primary tool for storing your data, but if you cannot access the internet at a particular place, then it is better than only using Git. I would also hesitate to put the repo on the M: drive, because it takes a much longer time to access the M: drive and download the repo, which is terribly inefficient.
 But again, another form of redundancy is not a bad thing, but the M: drive can be difficult to use and is more inefficient than Git when it comes to time and possible confusion of which is the newest copy.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
@@ -93,7 +92,7 @@ If there was more than 50 lines left, I would write the next 50 lines in, increm
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
 Exercise 1.2
-	Stacks share the same properties as Dyck words because neither can have a negative sequence of +1s or -1s. The push() methods of stacks is equivalent to a +1 in a Dyck word, and the pop() method is equivalent to a -1. In a Stack, you can never have more pops than pushes in any situation, because eventually there will be nothing left in the Stack to pop. In Dyck words, the sum of the prefix cannot be negative, similarly to how Stacks cannot have more pops than pushes. 
+	Stacks share the same properties as Dyck words because neither can have a negative sequence of +1s or -1s. The push() methods of stacks is equivalent to a +1 in a Dyck word, and the pop() method is equivalent to a -1. In a Stack, you can never have more pops than pushes in any situation because eventually there will be no inputs left in the Stack to pop. In Dyck words, the sum of the prefix cannot be negative, similarly to how Stacks cannot have more pops than pushes. 
 
 
 
