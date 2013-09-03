@@ -59,7 +59,8 @@ Whether you decide to keep it on your USB drive or M: drive is up to you. As lon
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+Since you forgot your USB drive with your repo on it, you can make a local copy of the most recent repo by cloning the repo from GitHub and store it on your M: drive. Hopefully you pushed your
+most recent changes that you did on your USB drive to GitHub.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
