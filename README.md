@@ -56,26 +56,35 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+Accidents may happen when you rely upon a USB drive, you may lose it, it make be physically broken, etc. Also git is better than using a an M: drive because it can update real-time to the server and can be access from anywhere.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+The only thing you may have to do is go back and get the USB if you did not use git, nor any type of storage over a server. However using github will solve this problem as you will be able to access it anywhere only with the requirement of internet connection.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1) I think the stack method will work the best, as the computer reads through each line it will stack up that information to the very last line, then it can get store it in a reverse order after reading all of them.
+2)The list data structure seems to fit this case, making a list of 50 at a time then move on to the next 50.
+3)A queue would work best in this situation, you can set thelimit of the queue, read 42 lines into the queue and check if the 43rd one is empty.
+4)The USet seems the most appropriate for this problem because it sorts its element. By using sucessor search you can compare one line to the next and end avoid duplicates.
+5)The USet would be appropriate for this problem aswell, because the interface sorts its elements you can check and see if the line may be duplicated.
+6)Again I would use USet, adding the all the lines while using find(x) to make sure that none are duplicated, afterwards compares the lines one by one to get a sorted list by length.
+7)The approach can be the same as the last problem, simply without the find(x)
+8)I would read the lines all into a list then create a loop of outputing every other line
+9)I would create a list of all the lines... and switch items in the list? I'm not certain if that's possible
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
+1.3
+Store the string into a list and then you will be able to compare the opposite if it matches the bracket by dividing by two and add/subtract the value from that element. For example "{[()]}" the [ is the second element out of 6, 6/2 is 3 and the differentbetween 3 and 2 s one therefore add 1 to 3... comparing element 2 and 4. 
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - contents of a file
+2. tree - points to blobs... kind of like an address that breaks down (State, city, street, number)
+3. commit - saving a blob with changes from the previous one
+4. repo - A place to store data
+5. hash - A unique identifier for a blob, different for every blob that is different. cannot be manufatured( I cannot get a specific hash I want)
