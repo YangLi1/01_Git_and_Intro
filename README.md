@@ -56,26 +56,32 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+Most of the time a USB would be redundant to carry around unless you plan on working offline. It does not hurt, yet most of the time you should be able to have access to the Git server and whatever code you need.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+Assuming you pushed your repository to github before leaving, you can pull your version of the repository to another computer.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1. Using the LIFO interface, read the lines in order and then remove in reverse order
+2. Using the List interface, I would read in lines until size() returns 50 or there are no lines. Then I would use get(size()-1) and remove(size()-1) to output and clear the array in reverse order. Once the array is clear again, repeat the process, unless the array never got to size 50.
+3. Using the List interface, I would read lines one by one, and once the size() returns 43 or more, get(size()-1), and if it is blank, get(size()-42) and output it. Either way remove(size(-42) must be called at the end of the loop to make room for the next line.
+4. Using the USet interface, read in every line, duplicates returning false during the add(x) function and not being added to the set. Then print the entire array.
+5. Using the USet interface, read in every line, checking to see if the element is there using find(x). If it exists already, print the line. If not, it is added to the array.
+6. Using SSet, read in every line. Duplicates will be found using find(x) and will be stored in a seperate list so that they get printed only once. The size of each string will also be checked as you add each string to the duplicate list in order to sort it as they are added.
+7. Using SSet, do the same as #6 but now the duplicates list will also use find(x) so that if it is a duplicate of a duplicate, another list will be created and will then have to be checked.
+8. Using the List interface, read in even numbers and remove and print them immediately, while odd numbered lines get stored until there are no more lines left and then are removed and printed.
+9. Using the List interface, read in each line. When removing and printing, use remove(size()*random()) to remove a "random" line from the listing until size() outputs 0.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
-Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
-
-[Your answer here]
+1.3: If you store each character in the string in a list and get(n)==get(size()-n) ever outputs false, the possible values for n being from 0 to size()/2, then the string is an unmatched string. Otherwise it is a matched string.
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - binary data stored in a repository
+2. tree - objects that point from blob to blob, or even other trees, connecting different versions. Represents a level of a directory
+3. commit - an edit to a blob, that is followed by commentary of the changes between the previous and current version
+4. repo - a place to store various parts of a project
+5. hash - An identifier calculated by shrinking a long string from the blob to a small string
