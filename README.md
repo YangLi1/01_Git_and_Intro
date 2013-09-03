@@ -70,13 +70,18 @@ read file into an array and then write another for loop starting from the end re
 for (int j=(i+1)*50, j> ((i+1)*50)-50 , j--) to print out that  multiple of 50 from 50 to 49 ect.
 }
 
-3.
+3. i would use a queue then pop off the first one after the size of the queue is 42 and add the current line at that time. then when the line is blank save the oldest item in the queue and report that.
+ 
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
+by pushing the second newest element so its now "on top" of the stack, and then poping the version of that element that was second newest, then repeating that process with the third then fourth until you get to the original bottom of the stack it will be reversed.
+for example : 1,2,3,4 --> push: 1,2,3,4,3 then pop: 1,2,4,3 --> push: 1,2,4,3,2 then pop: 1,4,3,2, --> push: 1,4,3,2,1 then pop: 4,3,2,1. 
+ 
+
+
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
