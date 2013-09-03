@@ -70,7 +70,12 @@ You should clone your repo from Github to the local computer you're on. After wo
 	1. I would use a LIFO queue for this task.  Once you reach the end of the lines, the last line read in would be the first one you want to print when printing in reverse order.
 	2. I would continue to use a LIFO queue for this task.  With the same goal, specify to read 50 lines of a document, print them in LIFO order, then read the next 50 lines and continue.
 	3. For this task I would use a list structure.  Once you reach a blank line after line 42, the first element in your list at the time will be the line you want to print (42 lines before you reach the blank one).  You would have to shift your list each time you read a line to be sure not to store over 42 lines at once.
-	4. I would use a USet structure. As you read new lines, check against a created stored set to see if they have already been added.  If so, skip that line. If not, add that line to the set and print it in the output. 
+	4. I would use a USet structure. As you read new lines, check against a created stored set to see if they have already been added.  If so, skip that line. If not, add that line to the set and print it in the output.
+	5. Continue to use the USet structure.  As you read lines, add them to the set. Once you come across a line that is already in the set, print it to the output without adding it to the set again.
+	6. I would use a priority queue.  After reading in all lines, remove and print to the output the smallest lines that have been read in.  If lines are duplicates, print to the output only once.  If lines are the same length, use the usual "sorted order" for whatever type of data you are reading in.
+	7. For duplicate lines, print the line once for each time it was read in.  You will have an output that is the same number of lines as the input you read in.
+	8. I would use a list structure.  After reading the entire document, print to the output the lines that were indexed with even numbers.
+	9. I would use a list structure for this also.  It is the only alternative that allows you to have all lines stored, use index numbers to access any line at will (not stacked), and print them randomly.  Use a randomizing function to select an index number from the list, print the line on the random index position, remove that line from your list, then select a new index randomly, etc. 
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
