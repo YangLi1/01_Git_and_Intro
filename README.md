@@ -69,9 +69,34 @@ work that was newly added to GitHub to the work on your flashdrive.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-1. LIFO
+1. I would use a Stack.  This way you push everything on to the stack and pop it off.  When you pop it off it will
+pull the most recent ones which have been added putting the lines in reverse.
 
-2. 
+2. I would use a Stack, using push the stack will keep piling up.  Once you have 50 things in the stack use pop and it will
+take everything off the top putting everything is reverse order.
+
+3. I would use a Queue for this one.  As I read in the files I would be keeping track of the indexes.
+Once I caught a line that was blank I would print the line 42 behind by calling that specific index and then keep adding
+on to the list. 
+
+4.  I would use a Uset.  Usets do not allow duplicates and it is not asked to keep the lines in order.
+So even though Uset is unordered that is not a problem in this case.
+
+5. I would use a Uset. Since Usets don't allow duplicates you would just print out all the lines 
+that are not allowed to be stored in the set.
+
+6. I would use an Sset.  Sset has a find function which will allow you to find the shortest lines.
+The order in which they were in does not matter, just the order in which Sset finds the lengths.  So
+Sset being disordered does not matter and the find function will be a valuable tool.  Also Ssets can't have duplicates
+therefor you won't have any problems with that.
+
+7. I would use a priority Queue.  Priority Queue checks for the smallest values and removes them in that order.  So this would be perfect.
+
+8. I would use a Queue.  Queue keep order and you can call the items specific location.  Therefore
+I would use this to store it and write out all the even indexes.
+
+9. I would use a Uset.  This would work best because a Uset does not have a distinct order.  Therefor
+you can add the lines to a Uset and print them out and they will come out in a Random order.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
