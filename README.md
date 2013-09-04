@@ -79,19 +79,13 @@ while(hasNextLine == true) {
 		println(s.pop());
 	}
 }
-3.
-
-Pseudo-code:
-while(hasNextLine == true) {
-	int count = 0;
-	queue q;
-	while(count < 44)
-4.
-5.
-6.
-7.
-8.
-9.
+3. I'm not sure how to code this into pseudo-code but I would use the FIFO queue structure to solve this problem. I would have a queue of size 43 where it would add an element until the queue reaches the size of 43, then after that point every time a new element is added it would remove the first element in the queue.  Upon reaching a blank line or element it would print the first element in the queue. All of this would happen until there are no more lines to be read.
+4. I would use a USet data structure and use the find(x) function to check if the element is present already in the set.
+5. I would again use the USet data structure and use the find(x) function to check if the element is present already in the set. If the element is present a second time I would then print the output and remove the first occurrence of the element from the set using remove(x).
+6. I would use the SSet data structure using the find(x) to find the smallest lengths of elements in the set to sort it, then use compare(x,y) to check if the elements are the same length. If the elements are the same length and compare returns true, then it will only print once and skip the next entry.
+7. I would do the same as the previous question yet I won't skip duplicate entries.
+8. I would use two FIFO queues for this.  I would first read in the entire input one line at a time into a FIFO queue, then I would print each even element starting with 0, and on every odd element add it to the other empty FIFO queue(while removing each element after it has been printed).  After the first queue is empty and all the even elements have been printed, the second queue would simply print each element in its queue(while removing each element after its printed).
+9. The only way I can think to do this currently using only the data structures given is to put all of the elements into a stack, then pop them into a queue of varying size, then return the elements into the stack.  And then repeat this process a couple times to "randomize" the order, then just print the elements off the top of the stack.
 
 
 
