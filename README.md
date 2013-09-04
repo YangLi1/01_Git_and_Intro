@@ -64,13 +64,30 @@ Clone my repo from github and create a new branch off of the repository.  Then w
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+
+
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
+1.4
+In order to reverse the elements of a stack s, using only the push(x) and pop(), along with the FIFO queue q, I would use the following.  First I would pop() all of the elements from s and add them to the queue one by one until s is empty. Next, I would remove the elements from the queue and push them to the stack one by one until the queue is empty.  The elements in s would now be reversed.
+In pseudo-code it would look like the following:
+
+while(s != null)
+	q.add(s.pop());
+while(q != null)
+	s.push(q.remove());
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
