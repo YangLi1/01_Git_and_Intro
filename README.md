@@ -64,9 +64,28 @@ Clone my repo from github and create a new branch off of the repository.  Then w
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-1.
-2.
+1. I would use just only a stack to accomplish this, and push every element in, then pop out every element accordingly.
+2. This problem can be solved using a stack again with some simple constraints and while loops. Once the stack has reached the limit of 50, it will print the first element on the stack in reverse order until the stack is empty, then repeat the process.
+
+Pseudo-code:
+while(hasNextLine == true) {
+	int count = 0;
+	stack s;
+	while(count < 50) {
+		s.push(nextLine);
+		count++;
+	}
+	while(s != null) {
+		println(s.pop());
+	}
+}
 3.
+
+Pseudo-code:
+while(hasNextLine == true) {
+	int count = 0;
+	queue q;
+	while(count < 44)
 4.
 5.
 6.
