@@ -65,7 +65,9 @@ You should just clone your repo from git's servers. You can then make whatever c
 #### 3. Morin, Exercise 1.1 (p. 23)
 
 1.1.1 
+	
 	create a stack
+	
 	open a file
 	
 	while the next input is a new line
@@ -79,11 +81,17 @@ You should just clone your repo from git's servers. You can then make whatever c
 	close the file
 	
 1.1.2
+	
 	create a deque
+	
 	open a file
+	
 	create counter variable
+	
 	create boolean variable
+	
 	read in the first fifty lines
+	
 	while the next input is a new line
 		if counter is factor of 50(50, 100, 150 etc)
 			boolean = !boolean
@@ -98,11 +106,15 @@ You should just clone your repo from git's servers. You can then make whatever c
 	close file
 	
 1.1.3
+
+
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
-Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
+1.4
 
-[Your answer here]
+	for the stack size
+		pop() each element out and put it in a queue
+	for the queue size, push each element back onto the stack
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
