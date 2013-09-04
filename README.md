@@ -56,26 +56,51 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+Yes, it is okay to have the local copy of my repo on a USB drive and carry it around, but this is more risky. It's legal because you can sync with github from anywhere, but this method is less practical simply because we could lose the local repo. Keeping it on the M: drive is much safer and is still legal, and is therefore prefered.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+Clone the repo from github that way I can work on it from the local machine. Of course I would have to have commited all my work from before so that way id be working on the current version.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
+1. by pushing all the elements onto a stack and then popping them all off and putting those popped elements into an array list, they will be reversed 
 
-[Your answer here]
+	
+2.  using a for loop of  for (int i=0,  i= size/50, i++) to make it run through however many sets of 50s there are and then nesting  {  
+for (int j=(i+1)*50, j> ((i+1)*50)-50 , j--) to print out that  multiple of 50 from 50 to 49 ect.
+}
+
+3.  i would use a queue then pop off the first one after the size of the queue is 42 and add the current line at that time. then when the line is blank save the oldest item in the queue and report that.
+ 
+4.  Using a list, run through the list, and if it's a duplicate, do not write it out.
+
+5.  Using a list, run through the list, and if it has already been seen at least  once, then write it out.
+
+6.  make a list, sort the list from shortest to longest, then print out the lines if the same line has not been printed already.
+
+7.  make a list, sort the list from shortest to longest, then print out all lines in list.
+
+8. make a list, read through the list twice, fist printing out the lines that are even, then run through a second time doing every odd line.
+
+9.  read in all the lines into an array list, and then have it shuffle using random indexes. 
+
+
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
+CHOICE IS 1.4
+
+by pushing all the elements onto a new stack and then popping them all, they will be reversed.
+
+
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - binary data. "it references nothing and is referenced only by tree objects."
+2. tree - Tree objects point to blobs and possibly to other trees as well. A tree is a new version of the same project after a commit or deviation from a branch
+3. commit - an update or change a branch.
+4. repo - the repository, where the code is located.
+5. hash - the 40 digit assigned algorithem that references to a work.
+
