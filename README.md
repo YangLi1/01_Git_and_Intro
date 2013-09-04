@@ -106,7 +106,25 @@ You should just clone your repo from git's servers. You can then make whatever c
 	close file
 	
 1.1.3
+1.1.4
+1.1.5
+1.1.6
+1.1.7
+1.1.8
 
+	create two queues called even and odd
+	create counter variable
+	while next input is new line
+	if counter % 2 = 0
+		put line in even
+	else 
+		put line in odd
+	counter ++
+	
+	print even
+	print odd
+
+1.1.9
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
