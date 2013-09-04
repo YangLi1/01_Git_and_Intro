@@ -81,11 +81,23 @@ You should just clone your repo from git's servers. You can then make whatever c
 1.1.2
 	create a deque
 	open a file
-	
+	create counter variable
+	create boolean variable
 	read in the first fifty lines
 	while the next input is a new line
-		output the line from the front of the deque
-		input the next line to the back of the deque
+		if counter is factor of 50(50, 100, 150 etc)
+			boolean = !boolean
+		switch(boolean)
+		if true (output the line from the front of the deque
+				input the next line to the back of the deque)
+		if false (output the line from the back of the deque
+				input the next line to the front of the deque)
+				
+		counter +1	
+
+	close file
+	
+1.1.3
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
