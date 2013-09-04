@@ -56,26 +56,50 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+It's okay to make copies of your work and back it up also using your USB drive or M drive, but it's not okay to use them as your master for your work. It's important to use redundancy when backing up your master, and using GitHub to keep copies of all your repos online where you can access them anywhere.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+Clone your up-to-date repo from GitHub using git, check it out, work on it, then push your updates while you work to GitHub.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1.1.1. Stack: using a loop, read in each line as a string, and push it onto a stack. Once all the lines are read, use a loop which pops a string off the stack and prints it.
+
+1.1.2. Stack: using a loop which reads in 50 lines as a string, push each line onto a stack. Once 50 lines are read, use a loop which pops a string off the stack and prints it.
+
+1.1.3. Queue: first read in at least 42 lines, placing them into a queue capable of storing 43 lines, while discarding any blank lines and popping without printing if the array reaches 43 lines long. After having stored 42 lines, instead of discarding blank lines, if a blank line is detected, pop and print the line.
+
+1.1.4. USet: add each string into a USet since the USet will only add unique elements. If the add(String s) returns true, print the string.
+
+1.1.5. USet: attempt to add each string into a USet. If the add(String s) returns false, print the string.
+
+1.1.6. SSet: add all the lines into the SSet, which will automatically sort them, while also refusing to accept duplicates, then print the output.
+
+1.1.7. USet: add all the strings into a USet, then print them all out.
+
+1.1.8. 2 Queues: alternate adding each line to the queues, so that one queue has all the even numbered lines, while the other has all the odd numbered lines. Print the contents of the even one first by popping and printing, then do the same with the odd numbered queue.
+
+1.1.9. Array of Strings: load each string into the array, then use Math.Random() to generate a random number in the array to print, while keeping track of which integers were already picked.
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
+Exercise 1.4:
+
+ while(!stack.isEmpty())
+  queue.add(stack.pop())
+ while(!queue.isEmpty())
+  stack.push(queue.next())
+
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - An allocated space of files
+2. tree - a directory consisting of pointers to blobs and other subdirectories/trees
+3. commit - a version of your project which contains a pointer to its parent and a pointer to the directories/blobs being used by this version.
+4. repo - the database filled with your objects which contains configurations and histories of your project
+5. hash - the identifier for an object; the name is calculated using SHA1 and is represented with 40 character hexadecimal encoding
+
+* Some of the definitions above were found in the gitglossary, which can be found here: https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html
