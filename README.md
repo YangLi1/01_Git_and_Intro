@@ -56,26 +56,70 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+No, it doesn't defeat the entire purpose of git, but it is a bad idea. You need to constantly be pulling, committing, and pushing your work to git's servers. This allows you to have an accurate representation of your changes. This also saves against loss of data, this goes for the M: drive as well. Data loss is a fact of life. If you just have your local repo on your flash drive or the M: drive and something happens to it, you are not going to have any recourse to get it back.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+You should just clone your repo from git's servers. You can then make whatever changes you need to make, and push your change. When you get back to your USB drive, you then can merge the two and fix whatever errors, if any, occur.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1.1.1 
+	
+	create a stack
+	
+	open a file
+	
+	while the next input is a new line
+		read in the line and put it on the stack
+		check the next input
+	
+	while the stack isn't empty
+		pop from the stack and write to the file
+		check if the stack is empty
+	
+	close the file
+	
+1.1.2
+	
+	create a deque
+	
+	open a file
+	
+	create counter variable
+	
+	create boolean variable
+	
+	read in the first fifty lines
+	
+	while the next input is a new line
+		if counter is factor of 50(50, 100, 150 etc)
+			boolean = !boolean
+		switch(boolean)
+		if true (output the line from the front of the deque
+				input the next line to the back of the deque)
+		if false (output the line from the back of the deque
+				input the next line to the front of the deque)
+				
+		counter +1	
+
+	close file
+	
+1.1.3
+
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
-Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
+1.4
 
-[Your answer here]
+	for the stack size
+		pop() each element out and put it in a queue
+	for the queue size, push each element back onto the stack
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - the contents of a file in git
+2. tree - the file directories of git
+3. commit - points to the new tree
+4. repo - repository, this is the overarching group of project files for any given project
+5. hash - function that takes long strings and makes them short ones(this is an oversimplified answer)
