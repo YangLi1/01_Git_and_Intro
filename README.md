@@ -63,7 +63,9 @@ you later push these changes to GitHub so you have them there as well.
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+You should clone your repository from your online GitHub and work on it from the computer you are using, it is fine not to have your flash drive.  Just
+make sure you push frequently so you have the work when you go home.  Also when you use your flash drive again make sure you pull the
+work that was newly added to GitHub to the work on your flashdrive. 
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
@@ -77,8 +79,16 @@ Note: You should not need to write any real computer code for any of these. Inst
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - A blob is a binary representation of what is inside of a file.  It can be anytype of file.  In Git
+this is how all files are stored so it is not limited to certain file types.
+2. tree - A tree is the directory information for a blob.  A tree can reference another tree not just a blob
+and therefor can create a huge hierarchy.  Git uses this to store and reference Blobs.
+3. commit - A commit is the metadata for each change that is made.  A commit references the tree object and its current state when the 
+commit is made.  Therefor commits create many trees all pointing to specific points in time when the commit was made.  Git uses this
+to track changes. This allows you to go back to a certain point in your work before you made certain changes.  Its a great way to see
+your work progress, and or go back to a point in time to avoid a new bug you may have coded.
+4. repo - A repo is the main object in a project.  It holds all the branches of a project.  Git uses it to store each project and keep track of each branch of
+the project.  A repo tends to be the main object which holds all of your changes and different branches.
+5. hash - A hash is a 40 char hexidecimal string which references your blob.  This allows an extremely high number of files to be referenced and each be unique.
+If a change is made to a file the file gets a new hash, therfor you can see the old file before the change, and after the change by 
+referencing the hash value.  This allows Git to have imuteable objects.  
