@@ -56,26 +56,37 @@ Exercises
 
 #### 1. Based on the reading in the Git book, is it okay to keep your local copy of your repo on a USB drive and just carry it around? Explain why or why not. What about keeping it on the M: drive?
 
-[Your answer here]
+It is okay to keep the local copy of your repo on a USB drive and M: drive. A local copy of your repo needs to be made so that you can make changes to it and then push these changes to GitHub.
+Whether you decide to keep it on your USB drive or M: drive is up to you. As long as you can access it to make changes.
+
 
 #### 2. Imagine that you come into the lab on the weekend to work on homework with friends, but you forgot to bring your USB drive with your repo on it. What should you do?
 
-[Your answer here]
+Since you forgot your USB drive with your repo on it, you can make a local copy of the most recent repo by cloning the repo from GitHub and store it on your M: drive. Hopefully you pushed your
+most recent changes that you did on your USB drive to GitHub.
 
 #### 3. Morin, Exercise 1.1 (p. 23)
 
-[Your answer here]
+1. Stack: Stack allows for a last-in-first-out method so use this to print the lines in reverse.
+2. List & Stack: in List multiple lines of input can be added at one time, then use Stack to remove the lines in reverse order
+3. List: read the first 42 lines and then get(i) each next line and see if blank. If blank then get(i) the blank line minus 42 and output.
+4. USet: USet does not allow duplicates. Read each line and before adding it use find(x) to see if the line has already been read. If it has do not add but if it has not then add.
+5. USet & List: USet does not allow duplicates. add(x) each line one at a time and if the line already exists in the USet (find out through find(x)), add the line to a List
+6. SSet: Use the compare(x,y) to sort the lines and remove duplicate lines through find(x).
+7. SSet: Use the compare(x,y) to sort the lines
+8. List: Add all the input and then output the even through get(i) and a for loop, then output the odd
+9. USet: USet is an unordered set of unique elements. Use random number to randomly pick i and get(i)
 
 #### 4. Your choice: Morin, Exercise 1.2, 1.3, or 1.4 (pick one)
 
 Note: You should not need to write any real computer code for any of these. Instead, explain how you would approach the problem using a combination of English and pseudocode. The goal is to write something that is understandable by any programmer, even if the two of you have never used the same computer language. (In other words, assume the other person does not know the syntax of Java or C/C++, but knows the basic programming constructs such as for loops, if statements, variables, and so on.)
 
-[Your answer here]
+1.2: A relationship between Dyck words and Stack push(x) and pop() operations is the addition and removal of +/- 1's to get a Dyck word. Stack push(x) and pop() operations can be used to ensure that the prefix of a Dyck word is positive. An if statement can be run where if the prefix is negative, a +1 must be added through Stack push(x) in order to make a Dyck word. If the prefix is not negative then it is a Dyck word.
 
 #### 5. Define/explain each of the following terms, as they relate to git.
 
-1. blob - TODO
-2. tree - TODO
-3. commit - TODO
-4. repo - TODO
-5. hash - TODO
+1. blob - represented by each version of a file; holds only the file's data; does not contain any metadata about the file or its name.
+2. tree - represents one level of directory information; can reference other tree objects
+3. commit - holds metadata for each change in a repo; points to a tree object; have parents except the inital commit has no parent
+4. repo - database that contains all the information needed to retain and manage the revisions and history of a project
+5. hash - 40 bytes of hexadecimal that represents a file; once a file is changed a hash is changed
